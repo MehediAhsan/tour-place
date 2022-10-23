@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const HomeCard = ({place}) => {
-    const {name, picture} = place;
+const HomeCard = ({place, handleSelectPlace}) => {
+    const {id, name, picture} = place;
     return (
-        <a href="/" aria-label="View Item">
+        <Link onClick={() => handleSelectPlace(id)} to="/" aria-label="View Item">
         <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
           <img
             className="object-cover w-full h-56 md:h-64 xl:h-80"
@@ -16,7 +17,7 @@ const HomeCard = ({place}) => {
             </p>
           </div>
         </div>
-      </a>
+      </Link>
     );
 };
 
