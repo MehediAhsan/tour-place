@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HomeTopSide = ({selectedPlace}) => {
-    const {name, picture, details} = selectedPlace;
+    const {id, name, picture, details} = selectedPlace;
     return (
         <div className='p-16'>
             <div className="min-h-screen pt-40 bg-no-repeat bg-cover" style={{ backgroundImage: `url(${picture})` }}>
@@ -16,7 +17,9 @@ const HomeTopSide = ({selectedPlace}) => {
                         details
                     }
                 </p>
-                <button type="button" className="px-8 py-3 font-semibold rounded dark:bg-gray-100 dark:text-gray-800">Booking</button>
+                <Link to={`/booking/${id}`}>
+                    <button type="button" className="px-8 py-3 font-semibold rounded dark:bg-gray-100 dark:text-gray-800">Booking</button>
+                </Link>
                 </div>
             </div>
         </div>
