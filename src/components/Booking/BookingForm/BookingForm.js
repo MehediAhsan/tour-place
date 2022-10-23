@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import DatePicker from 'react-date-picker';
+import { Link } from 'react-router-dom';
 
 const BookingForm = ({place}) => {
+    const {name} = place;
     const [start, setStart] = useState(new Date());
     const [end, setEnd] = useState(new Date());
     return (
@@ -33,7 +35,7 @@ const BookingForm = ({place}) => {
                 placeholder="Doe"
                 required
                 type="text"
-                value={place.name}
+                value={name}
                 className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
                 id="lastName"
                 name="lastName"
@@ -58,12 +60,14 @@ const BookingForm = ({place}) => {
                 </div>
             </div>
             <div className="mt-4 mb-2 sm:mb-4">
-                <button
-                type="submit"
-                className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-500 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                >
-                Start Booking
-                </button>
+                <Link to={`/hotels/${name}`}>
+                    <button
+                    type="submit"
+                    className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-500 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                    >
+                    Start Booking
+                    </button>
+                </Link>
             </div>
         </form>
     );
