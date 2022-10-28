@@ -1,10 +1,12 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import useTitle from '../../hooks/useTitle';
 import BookingForm from './BookingForm/BookingForm';
 
 const Booking = () => {
     const place = useLoaderData();
     const {picture, details, name} = place;
+    useTitle('Booking')
     return (
         <div>
             <div className="relative">
