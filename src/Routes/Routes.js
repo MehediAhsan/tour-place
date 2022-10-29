@@ -5,6 +5,7 @@ import Hotels from "../components/Hotels/Hotels";
 import Login from "../components/Login/Login/Login";
 import Register from "../components/Login/Register/Register";
 import Main from "../layout/Main";
+import PrivateRoute from "./PrivateRoute/PrivateRoute";
 
 export const router = createBrowserRouter([
     {
@@ -24,7 +25,7 @@ export const router = createBrowserRouter([
             {
                 path: '/hotels/:name',
                 loader: ({params}) => fetch(`https://tour-place-server.vercel.app/hotels/${params.name}`),
-                element: <Hotels></Hotels>
+                element: <PrivateRoute><Hotels></Hotels></PrivateRoute>
             },
             {
                 path: '/login',
