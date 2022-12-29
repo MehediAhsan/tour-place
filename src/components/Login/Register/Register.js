@@ -54,32 +54,32 @@ const Register = () => {
 
     return (
         <div>
-            <div className="w-full max-w-md p-8 space-y-3 rounded dark:bg-gray-900 dark:text-gray-100 mx-auto my-5">
-                <h1 className="text-3xl font-semibold text-center pb-3">Sign up</h1>
-                <form onSubmit={handleSubmit} className="space-y-6 ng-untouched ng-pristine ng-valid">
+            <div className="w-full max-w-md p-5 space-y-2 rounded text-gray-900 border border-rose-500 mx-auto my-5">
+                <h1 className="text-3xl font-semibold text-center pb-3 text-rose-500">Sign up</h1>
+                <form onSubmit={handleSubmit} className="space-y-2 ng-untouched ng-pristine ng-valid">
                     <div>
                         <label className="block mb-2 text-sm">Full Name</label>
-                        <input type="text" name="name" placeholder="Full Name" className="w-full px-3 py-2 border rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100" required />
+                        <input type="text" name="name" placeholder="Full Name" className="w-full px-3 py-2 border rounded-md text-gray-900 bg-rose-50" required />
                     </div>
                     <div>
                         <label className="block mb-2 text-sm">Photo URL</label>
-                        <input type="text" name="photoURL" placeholder="Photo URL" className="w-full px-3 py-2 border rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100" required />
+                        <input type="text" name="photoURL" placeholder="Photo URL" className="w-full px-3 py-2 border rounded-md text-gray-900 bg-rose-50" required />
                     </div>
                     <div>
                         <label className="block mb-2 text-sm">Email address</label>
-                        <input type="email" name="email" placeholder="Email" className="w-full px-3 py-2 border rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100" required />
+                        <input type="email" name="email" placeholder="Email" className="w-full px-3 py-2 border rounded-md text-gray-900 bg-rose-50" required />
                     </div>
                     <div className="space-y-1 text-sm">
                         <label className="block mb-2 text-sm">Password</label>
-                        <input type="password" name="password" placeholder="Password" className="w-full px-4 py-3 rounded-md border dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400" required />
+                        <input type="password" name="password" placeholder="Password" className="w-full px-4 py-3 rounded-md border text-gray-900 bg-rose-50 focus:dark:border-violet-400" required />
                     </div>
-                    <button type='submit' className="block w-full p-3 text-center rounded-sm dark:text-gray-900 dark:bg-violet-400 font-semibold">Sign up</button>
+                    <button type='submit' className="block w-full p-3 text-center rounded-sm text-white dark:bg-rose-400 font-semibold">Sign up</button>
                     <p className='text-red-500'>
                         {error}
                     </p>
                 </form>      
-                <p className="px-6 text-sm text-center dark:text-gray-400">Already have an account?
-				<Link rel="noopener noreferrer" to="/login" className="hover:underline dark:text-violet-400">Login</Link>.
+                <p className="px-6 text-sm text-center text-white">Already have an account?
+				<Link rel="noopener noreferrer" to="/login" className="hover:underline dark:text-violet-400 font-semibold">Login</Link>.
 			    </p>
             </div>
         </div>
