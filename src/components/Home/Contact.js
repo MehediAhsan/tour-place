@@ -11,8 +11,8 @@ const Contact = () => {
     const { View } = useLottie(options);
 
     return (
-        <div>
-            <h1 className="mb-5 text-2xl md:text-4xl font-semibold leading-none text-center ">Contact <span className='text-red-400'>Us</span></h1>
+        <div className='mt-20'>
+            <h1 className=" text-2xl md:text-4xl font-semibold leading-none text-center ">Contact <span className='text-red-400'>Us</span></h1>
             <div className="grid max-w-screen-xl grid-cols-1 gap-20 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 text-gray-800">
 	<div className="flex flex-col justify-between">
 		<div className="space-y-2">

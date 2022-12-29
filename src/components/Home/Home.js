@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import useTitle from '../../hooks/useTitle';
+import Footer from '../Footer/Footer';
 import Contact from './Contact';
 import HomeCard from './HomeCard/HomeCard';
 import HomeTopSide from './HomeTopSide/HomeTopSide';
 import Review from './Review';
+import Starts from './Starts';
 
 const Home = () => {
     const places = useLoaderData();
@@ -26,7 +28,9 @@ const Home = () => {
                 }
             </div>
             <Review></Review>
+            <Starts></Starts>
             <Contact></Contact>
+            <Footer></Footer>
         </div>
     );
 };

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Review = () => {
     return (
-        <section className="my-10 mb-3">
+        <section className="my-10 mb-3 mt-10">
             <div className="container mx-auto flex flex-col items-center pb-6 mb-4 md:p-10 md:px-12">
                 <h1 className="text-2xl md:text-4xl font-semibold leading-none text-center text-primary">Best <span className='text-red-500'>Reviews</span></h1>
             </div>
