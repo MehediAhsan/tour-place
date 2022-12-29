@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import useTitle from '../../hooks/useTitle';
+import Contact from './Contact';
 import HomeCard from './HomeCard/HomeCard';
 import HomeTopSide from './HomeTopSide/HomeTopSide';
+import Review from './Review';
 
 const Home = () => {
     const places = useLoaderData();
@@ -23,6 +25,8 @@ const Home = () => {
                     places.map( place => <HomeCard key={place.id} place={place} handleSelectPlace={handleSelectPlace}></HomeCard>)
                 }
             </div>
+            <Review></Review>
+            <Contact></Contact>
         </div>
     );
 };
