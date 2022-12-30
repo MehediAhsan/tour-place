@@ -4,7 +4,7 @@ This website provide users to different types of hotel books according to the sp
 
 
 ## Live Link
-Hosted in Firebase -> [Ahsan Photography](https://tour-place-cf5e6.web.app/)
+Hosted in Firebase -> [Tour Place](https://tour-place-cf5e6.web.app/)
 
 ## Project Features and Functionality:
 

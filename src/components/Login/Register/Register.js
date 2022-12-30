@@ -4,12 +4,14 @@ import { useContext } from 'react';
 import { AuthContext } from '../../../contexts/AuthProvider';
 import { useState } from 'react';
 import toast from 'react-hot-toast';
+import useTitle from '../../../hooks/useTitle';
 
 const Register = () => {
     const {createUser, updateUserProfile} = useContext(AuthContext);
     const [error, setError] = useState('');
     const navigate = useNavigate();
     const location = useLocation();
+    useTitle('SignUp');
 
     const from = location.state?.from?.pathname || '/';
 
