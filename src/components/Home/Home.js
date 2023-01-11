@@ -10,10 +10,12 @@ import HomeCard from './HomeCard/HomeCard';
 import HomeTopSide from './HomeTopSide/HomeTopSide';
 import Review from './Review';
 import Starts from './Starts';
+import Gallery from './Gallery';
+import Team from './Team';
 
 const Home = () => {
     const places = useLoaderData();
-    const [selectedPlace, setSelectedPlace] = useState(places[2]);
+    const [selectedPlace, setSelectedPlace] = useState(places[3]);
     console.log(places);
     useTitle('Home');
     const handleSelectPlace = (id) => {
@@ -66,7 +68,7 @@ const Home = () => {
             </div>
             {/* <div className='container mx-auto px-10 grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2'> */}
             {/* <h1 className="text-2xl md:text-3xl font-semibold leading-none text-center text-primary mt-20">Select <span className='text-red-500'>Your Favourite Place</span></h1> */}
-            <div className='md:p-20 lg:p-10 mt-10'>
+            <div className=' md:p-20 lg:p-10 mt-10'>
             <Slider {...settings}>
                 {
                     places.map( place => <HomeCard key={place.id} place={place} handleSelectPlace={handleSelectPlace}></HomeCard>)
@@ -77,6 +79,8 @@ const Home = () => {
             </div>
             </div>
             {/* </div> */}
+            <Gallery></Gallery>
+            <Team></Team>
             <Review></Review>
             <Starts></Starts>
             <Contact></Contact>
