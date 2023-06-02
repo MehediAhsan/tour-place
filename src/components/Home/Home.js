@@ -59,10 +59,11 @@ const Home = () => {
         ]
       };
     return (
-      <div>
-        <div className="min-h-screen overflow-hidden  bg-no-repeat bg-cover  shadow" style={{ backgroundImage: `url(${selectedPlace.picture})` }}>
-          <div className=" bg-gray-900 bg-opacity-50 w-full h-screen flex items-end justify-end">
-            <div className='grid grid-cols-2'>
+      <div className='bg-black overflow-hidden '>
+        <div className="" >
+          {/*min-h-screen bg-no-repeat bg-cover shadow  style={{ backgroundImage: `url(${selectedPlace.picture})` }} */}
+          <div className=" bg-opacity-50 w-full h-screen flex items-end justify-end">
+            <div className='grid grid-cols-1 md:grid-cols-2'>
             <div className='flex items-end justify-center pb-20'>
                 <HomeTopSide key={selectedPlace.id} selectedPlace={selectedPlace}></HomeTopSide>
             </div>

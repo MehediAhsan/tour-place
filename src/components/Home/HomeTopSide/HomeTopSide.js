@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const HomeTopSide = ({selectedPlace}) => {
-    const {id, name, picture, details} = selectedPlace;
+    const {id, name, details} = selectedPlace;
     return (
         <div className=''>
             {/* <div className="min-h-screen flex items-center justify-center bg-no-repeat bg-cover  shadow" style={{ backgroundImage: `url(${picture})` }}> */}

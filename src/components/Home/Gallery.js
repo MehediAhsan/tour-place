@@ -3,12 +3,12 @@ import React from 'react';
 const Gallery = () => {
     return (
        
-<div className='bg-gray-200 py-16'>
-<h1 className="text-2xl md:text-3xl font-semibold leading-none text-center text-primary  mb-5">Best <span className='text-red-500'>Places</span></h1>
+<div className=' py-16'>
+<h1 className="text-2xl md:text-3xl font-semibold leading-none text-center text-gray-200  mb-5">Best <span className='text-red-500'>Places</span></h1>
 <div class="flex min-h-screen w-full flex-wrap content-center justify-center p-5 ">
 
   <div class="grid grid-cols-2 gap-3">
-    <div class="w-80 bg-white p-3">
+    <div class="w-80  p-3">
       <img alt='' class="h-52 w-full object-cover" src="https://blog.flyticket.com.bd/wp-content/uploads/2020/05/image007.jpg" />
       <ul class="mt-3 flex flex-wrap">
         <li class="mr-auto">

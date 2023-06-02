@@ -2,7 +2,7 @@ import React from 'react';
 
 const Team = () => {
     return (
-        <section className=" dark:bg-gray-200 dark:text-gray-800">
+        <section className="  dark:text-gray-200">
 	<div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
     <h1 className="text-2xl md:text-3xl font-semibold leading-none text-center text-primary">Our <span className='text-red-500'>Team</span></h1>
 		
