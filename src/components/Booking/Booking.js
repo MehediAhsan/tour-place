@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import useTitle from '../../hooks/useTitle';
+import Header from '../Header/Header';
 import BookingForm from './BookingForm/BookingForm';
 
 const Booking = () => {
@@ -9,21 +10,22 @@ const Booking = () => {
     useTitle('Booking')
     return (
         <div>
-            
-            <div className="relative">
+
+            <div className="relative overflow-hidden">
             <img
                 src={picture}
-                className="absolute inset-0 object-cover w-full h-full"
+                className="absolute inset-0 object-cover w-full min-h-screen"
                 alt=""
             />
-            <div className="relative bg-gray-900 bg-opacity-75">
-                <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-20 lg:py-20">
+            <div className="relative bg-black bg-opacity-80 min-h-screen">
+                <Header></Header>
+                <div className="px-4 py-24 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-20 lg:py-32">
                 <div className="flex flex-col items-center justify-between lg:flex-row">
                     <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 lg:w-7/12">
                     <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-rose-500 sm:text-4xl sm:leading-none">
                         {name}
                     </h2>
-                    <p className="max-w-xl mb-4 text-base text-gray-300 md:text-lg">
+                    <p className="max-w-xl mb-4 text-base text-gray-200 md:text-lg">
                         {details}
                     </p>
                     

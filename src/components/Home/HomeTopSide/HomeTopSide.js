@@ -8,8 +8,8 @@ const HomeTopSide = ({selectedPlace}) => {
             {/* <div className="min-h-screen flex items-center justify-center bg-no-repeat bg-cover  shadow" style={{ backgroundImage: `url(${picture})` }}> */}
             {/* <div className="relative bg-gray-900 bg-opacity-50 w-full h-screen flex items-center justify-center"> */}
             <div className=" text-neutral-content">
-                <div className="max-w-md mx-auto">
-                <h1 className="mb-5 font-bold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-rose-500 to-yellow-500 font-Berkshire " style={{"text-shadow":"2px 2px #FF007F"}}>{name}</h1>
+                <div className="max-w-full px-4 md:px-20 lg:px-14 mx-auto">
+                <h1 className="mb-5 text-5xl text-rose-500 font-Berkshire" >{name}</h1>
                 <p className="mb-5 text-rose-200 font-semibold text-base">
                     {
                         details?.length > 200 ?

@@ -21,7 +21,7 @@ const Header = () => {
     }
 
     return (
-        <div className="container bg-transparent absolute px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-20 lg:px-14">
+        <div className="container bg-transparent absolute px-4 py-5 mx-auto sm:max-w-xl md:max-w-full md:px-20 lg:px-14">
       <div className="relative flex items-center justify-between">
         <Link
           to="/"

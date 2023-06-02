@@ -4,7 +4,7 @@ const Gallery = () => {
     return (
        
 <div className=' py-16'>
-<h1 className="text-2xl md:text-3xl font-semibold leading-none text-center text-gray-200  mb-5">Best <span className='text-red-500'>Places</span></h1>
+<h1 className="text-2xl md:text-3xl font-semibold leading-none text-center text-gray-200  mb-5">Best <span className='text-rose-500'>Places</span></h1>
 <div class="flex min-h-screen w-full flex-wrap content-center justify-center p-5 ">
 
   <div class="grid grid-cols-2 gap-3">
