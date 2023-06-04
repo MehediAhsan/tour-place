@@ -1,13 +1,14 @@
 import { RouterProvider } from 'react-router-dom';
 import './App.css';
 import { router } from './Routes/Routes';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 function App() {
   return (
-    <div className='bg-black '>
-      {/* <video autoPlay loop muted style={{position:'absolute', width:'100%', height:'100%', objectFit:'cover',left:'50%', top:'50%', zIndex:'-1', transform:"translate(-50%,-50%)"}}>
-        <source src={bg} type="video/mp4" />
-      </video> */}
+    <div className='bg-black'>
       <RouterProvider router={router}></RouterProvider>
     </div>
   );

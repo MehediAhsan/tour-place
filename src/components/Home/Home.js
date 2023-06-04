@@ -64,12 +64,12 @@ const Home = () => {
           {/*min-h-screen bg-no-repeat bg-cover shadow  style={{ backgroundImage: `url(${selectedPlace.picture})` }} */}
           <div className=" bg-opacity-50 w-full h-screen flex items-end justify-end">
             <div className='grid grid-cols-1 md:grid-cols-2'>
-            <div className='flex items-end justify-center pb-20'>
+            <div data-aos="fade-right" data-aos-duration="1000" className='flex items-end justify-center pb-20'>
                 <HomeTopSide key={selectedPlace.id} selectedPlace={selectedPlace}></HomeTopSide>
             </div>
             {/* <div className='container mx-auto px-10 grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2'> */}
             {/* <h1 className="text-2xl md:text-3xl font-semibold leading-none text-center text-primary mt-20">Select <span className='text-red-500'>Your Favourite Place</span></h1> */}
-            <div className=' md:p-20 lg:p-10 mt-10'>
+            <div data-aos="fade-down" data-aos-duration="1000" className=' md:p-20 lg:p-10 mt-10'>
             <Slider {...settings}>
                 {
                     places.map( place => <HomeCard key={place.id} place={place} handleSelectPlace={handleSelectPlace}></HomeCard>)
