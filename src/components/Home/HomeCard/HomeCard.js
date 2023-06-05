@@ -7,7 +7,7 @@ const HomeCard = ({place, handleSelectPlace}) => {
         <Link onClick={() => handleSelectPlace(id)} to="/" aria-label="View Item">
         <div className="mr-4 relative overflow-hidden transition duration-500 transform rounded shadow-xl hover:-translate-y-2 hover:shadow-2xl border border-rose-500">
           <img
-            className="object-cover w-full h-44 md:h-64"
+            className="object-cover w-full h-36 md:h-64"
             src={picture}
             alt=""
           />

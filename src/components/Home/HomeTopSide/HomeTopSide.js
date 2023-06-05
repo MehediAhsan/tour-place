@@ -9,16 +9,22 @@ const HomeTopSide = ({selectedPlace}) => {
             {/* <div className="relative bg-gray-900 bg-opacity-50 w-full h-screen flex items-center justify-center"> */}
             <div className=" text-neutral-content">
                 <div className="max-w-full px-4 md:px-20 lg:px-14 mx-auto">
-                <h1 className="mb-5 text-5xl text-rose-500 font-Berkshire" >{name}</h1>
-                <p className="mb-5 text-rose-200 font-semibold text-base">
+                <h1 className="mb-5 text-2xl md:text-5xl text-rose-500 font-Berkshire" >{name}</h1>
+                <p className="mb-5 text-rose-200 md:font-semibold text-base">
                     {
                         details?.length > 200 ?
-                        details.slice(0 , 200) + '...':
+                        <>
+                        <span className='inline sm:hidden'>{
+                            details.slice(0 , 50) + '...'
+                        }</span>
+                        <span className='hidden sm:inline'>{
+                            details.slice(0 , 170) + '...'
+                        }</span></>:
                         details
                     }
                 </p>
                 <Link to={`/booking/${id}`}>
-                    <button type="button" className="px-4 py-2 bg-gradient-to-r from-rose-500 to-yellow-500 hover:from-yellow-500 hover:to-rose-500 text-white rounded text-lg shadow-lg">Booking</button>
+                    <button type="button" className="px-2 md:px-4 py-1 md:py-2 bg-gradient-to-r from-rose-500 to-yellow-500 hover:from-yellow-500 hover:to-rose-500 text-white rounded text-lg shadow-lg">Booking</button>
                 </Link>
                 </div>
                 </div>
