@@ -40,7 +40,7 @@ const Header = () => {
               to="/"
               aria-label="Home"
               title="Home"
-              className="font-medium tracking-wide text-rose-400 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide text-gray-200 transition-colors duration-200 hover:text-deep-purple-accent-400"
             >
               Home
             </Link>
@@ -50,7 +50,7 @@ const Header = () => {
               to="/"
               aria-label="About"
               title="About"
-              className="font-medium tracking-wide text-rose-400 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide text-gray-200 transition-colors duration-200 hover:text-deep-purple-accent-400"
             >
               About
             </Link>
@@ -60,7 +60,7 @@ const Header = () => {
               to="/"
               aria-label="Blog"
               title="Blog"
-              className="font-medium tracking-wide text-rose-400 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide text-gray-200 transition-colors duration-200 hover:text-deep-purple-accent-400"
             >
               Blog
             </Link>
@@ -70,7 +70,7 @@ const Header = () => {
               to="/"
               aria-label="About us"
               title="About us"
-              className="font-medium tracking-wide text-rose-400 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide text-gray-200 transition-colors duration-200 hover:text-deep-purple-accent-400"
             >
               Contact
             </Link>
@@ -81,7 +81,7 @@ const Header = () => {
               <>
                 <li>
                   <button onClick={handleLogOut}
-                    className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-rose-500 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                    className="inline-flex items-center justify-center h-11 px-4 font-medium tracking-wide text-rose-400 hover:text-white transition duration-200 rounded shadow-md border border-rose-200 hover:bg-rose-500"
                     aria-label="Login"
                     title="Login"
                   >
@@ -104,7 +104,7 @@ const Header = () => {
                 <li>
                   <Link
                     to="/login"
-                    className="inline-flex items-center justify-center h-11 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-rose-500 hover:bg-deep-purple-accent-700 "
+                    className="inline-flex items-center justify-center h-11 px-4 font-medium tracking-wide text-rose-400 hover:text-white transition duration-200 rounded shadow-md border border-rose-200 hover:bg-rose-500"
                     aria-label="Login"
                     title="Login"
                   >
@@ -122,7 +122,7 @@ const Header = () => {
             className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50"
             onClick={() => setIsMenuOpen(true)}
           >
-            <svg className="w-5 text-gray-100 ml-44" viewBox="0 0 24 24">
+            <svg className="w-5 text-gray-100 " viewBox="0 0 24 24">
               <path
                 fill="currentColor"
                 d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
@@ -139,7 +139,7 @@ const Header = () => {
           </button>
           {isMenuOpen && (
             <div className="z-50 absolute top-0 left-0 w-full">
-              <div className="p-5 bg-white border rounded shadow-sm">
+              <div className="p-5 bg-black border rounded shadow-sm">
                 <div className="flex items-center justify-between mb-4">
                   <div>
                   <Link
@@ -148,8 +148,8 @@ const Header = () => {
           title="Tour Place"
           className="inline-flex items-center"
         >
-          <img className='w-10 h-10' src={logo} alt="" />
-          <span className="ml-2 text-2xl font-bold tracking-wide text-rose-500 font-Berkshire">
+          <img className='w-8 h-8' src={logo} alt="" />
+          <span className="ml-2 text-xl font-bold tracking-wide text-rose-500 font-Berkshire">
             Tour Place
           </span>
         </Link>
@@ -177,7 +177,7 @@ const Header = () => {
                         to="/"
                         aria-label="Our product"
                         title="Our product"
-                        className="font-medium tracking-wide text-rose-400 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        className="font-medium tracking-wide text-gray-200 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         Home
                       </Link>
@@ -187,7 +187,7 @@ const Header = () => {
                         to="/"
                         aria-label="Our product"
                         title="Our product"
-                        className="font-medium tracking-wide text-rose-400 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        className="font-medium tracking-wide text-gray-200 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         About
                       </Link>
@@ -197,7 +197,7 @@ const Header = () => {
                         to="/"
                         aria-label="Product pricing"
                         title="Product pricing"
-                        className="font-medium tracking-wide text-rose-400 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        className="font-medium tracking-wide text-gray-200 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         Blog
                       </Link>
@@ -207,7 +207,7 @@ const Header = () => {
                         to="/"
                         aria-label="About us"
                         title="About us"
-                        className="font-medium tracking-wide text-rose-400 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        className="font-medium tracking-wide text-gray-200 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         Contact
                       </Link>
@@ -218,7 +218,7 @@ const Header = () => {
               <>
                 <li>
                   <button onClick={handleLogOut}
-                    className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-rose-500 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                    className="inline-flex items-center justify-center h-11 px-4 font-medium tracking-wide text-rose-400 hover:text-white transition duration-200 rounded shadow-md border border-rose-200 hover:bg-rose-500"
                     aria-label="Login"
                     title="Login"
                   >
@@ -241,7 +241,7 @@ const Header = () => {
                 <li>
                   <Link
                     to="/login"
-                    className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-rose-500 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                    className="inline-flex items-center justify-center h-11 px-4 font-medium tracking-wide text-rose-400 hover:text-white transition duration-200 rounded shadow-md border border-rose-200 hover:bg-rose-500"
                     aria-label="Login"
                     title="Login"
                   >

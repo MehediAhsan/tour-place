@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className="lg:w-1/3">
                     <Link rel="noopener noreferrer" to="/" className="flex justify-center space-x-3 lg:justify-start">
                         <div className="flex items-center justify-center rounded-full">
-                            <img className='w-14' src={logo} alt="" />
+                            <img className='w-12' src={logo} alt="" />
                         </div>
                         <span className="self-center text-2xl font-semibold text-rose-500 font-Berkshire">Tour Place</span>
                     </Link>
