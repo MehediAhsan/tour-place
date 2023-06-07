@@ -41,7 +41,7 @@ const Gallery = () => {
 <h1 className="text-2xl md:text-3xl font-semibold leading-none text-center text-gray-200  mb-5">Best <span className='text-rose-500'>Places</span></h1>
 <div class="flex min-h-screen w-full flex-wrap content-center justify-center p-5 ">
 
-  <div class="grid grid-cols-3 gap-3">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
       {
         places.map( place =><div class="w-80  p-3">

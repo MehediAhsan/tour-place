@@ -12,7 +12,7 @@ const Contact = () => {
 
     return (
         <div data-aos="fade-up" data-aos-duration="1000" className='pt-20 '>
-            <h1 className=" text-2xl md:text-3xl font-semibold leading-none text-center text-gray-200">Contact <span className='text-red-400'>Us</span></h1>
+            <h1 className=" text-2xl md:text-3xl font-semibold leading-none text-center text-gray-200">Contact <span className='text-rose-500'>Us</span></h1>
             <div className="grid max-w-screen-xl grid-cols-1 gap-20 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 text-gray-200">
 	<div className="flex flex-col justify-between">
 		<div className="space-y-2">
