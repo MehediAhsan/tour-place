@@ -11,7 +11,7 @@ const HomeCard = ({place, handleSelectPlace}) => {
             src={picture}
             alt=""
           />
-          <div className="absolute inset-0 px-3 py-2 transition-opacity duration-200 bg-black bg-opacity-90 opacity-80 flex justify-center items-center">
+          <div className="absolute inset-0 px-3 py-2 transition-opacity duration-200 bg-black bg-opacity-80 opacity-80 flex justify-center items-center">
             <p className="mb-4 text-3xl font-semibold text-white">
               {name}
             </p>

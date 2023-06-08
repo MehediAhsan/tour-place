@@ -25,7 +25,7 @@ export const router = createBrowserRouter([
             {
                 path: '/hotels/:name',
                 loader: ({params}) => fetch(`https://tour-place-server.vercel.app/hotels/${params.name}`),
-                element: <PrivateRoute><Hotels></Hotels></PrivateRoute>
+                element: <Hotels></Hotels>
             },
             {
                 path: '/login',

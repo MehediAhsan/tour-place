@@ -24,7 +24,7 @@ const HomeTopSide = ({selectedPlace}) => {
                     }
                 </p>
                 <Link to={`/booking/${id}`}>
-                    <button type="button" className="px-2 md:px-4 py-1 md:py-2 bg-gradient-to-r from-rose-500 to-yellow-500 hover:from-yellow-500 hover:to-rose-500 text-white rounded text-lg shadow-lg">Booking</button>
+                    <button type="button" className="px-2 md:px-3 py-1 md:py-1 bg-gradient-to-r from-rose-500 to-yellow-500 hover:from-yellow-500 hover:to-rose-500 text-white rounded text-lg shadow-lg">Booking</button>
                 </Link>
                 </div>
                 </div>
