@@ -30,6 +30,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/hotel/:id',
+                loader: ({params}) => fetch(`https://tour-place-server.vercel.app/hotel/${params.id}`),
                 element: <Checkout></Checkout>
             },
             {
