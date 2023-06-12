@@ -13,6 +13,7 @@ import Starts from './Starts';
 import Gallery from './Gallery';
 import Team from './Team';
 import Travel from './Travel';
+import Steps from './Steps';
 
 const Home = () => {
     const places = useLoaderData();
@@ -86,6 +87,7 @@ const Home = () => {
             <Travel></Travel>
             <Review></Review>
             <Starts></Starts>
+            <Steps></Steps>
             <Contact></Contact>
             <Footer></Footer>
         
