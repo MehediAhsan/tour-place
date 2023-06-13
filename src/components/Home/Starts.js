@@ -1,9 +1,9 @@
 import React from 'react';
-import CountUp from 'react-countup';
+// import CountUp from 'react-countup';
 
 const Starts = () => {
     return (
-        <section className="p-6 my-6 dark:text-gray-100 px-4 md:px-20 py-14">
+        <section data-aos="fade-up" data-aos-duration="1000" className="p-6 my-6 dark:text-gray-100 px-4 md:px-20 py-14">
 	<div className="container grid grid-cols-1 gap-6 mx-auto sm:grid-cols-2 xl:grid-cols-4 border p-10">
 		<div className="flex p-4 space-x-4 rounded-lg md:space-x-6 dark:text-gray-100">
 			<div className="flex justify-center p-2 align-middle rounded-lg sm:p-4 dark:bg-rose-400">

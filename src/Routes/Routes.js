@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import Blog from "../components/Blog/Blog";
 import Booking from "../components/Booking/Booking";
 import Checkout from "../components/Checkout/Checkout";
 import Home from "../components/Home/Home";
@@ -32,6 +33,10 @@ export const router = createBrowserRouter([
                 path: '/hotel/:id',
                 loader: ({params}) => fetch(`https://tour-place-server.vercel.app/hotel/${params.id}`),
                 element: <Checkout></Checkout>
+            },
+            {
+                path: '/blog',
+                element: <Blog></Blog>
             },
             {
                 path: '/login',
