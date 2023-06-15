@@ -5,7 +5,7 @@ const Steps = () => {
         <div data-aos="fade-up" data-aos-duration="1000" className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="grid gap-10 lg:grid-cols-2">
 
-      <div className="flex items-center justify-center -mx-4 lg:pl-8">
+      <div data-aos="fade-right" data-aos-duration="1000" className="flex items-center justify-center -mx-4 lg:pl-8">
           <div className="flex flex-col items-end px-3">
             <img
               className="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
@@ -27,7 +27,7 @@ const Steps = () => {
           </div>
         </div>
 
-      <section className=" dark:text-gray-100">
+      <section data-aos="fade-left" data-aos-duration="1000" className=" dark:text-gray-100">
 	<div className="container mx-auto flex flex-col p-6">
 		<h2 className="py-4 text-3xl font-semibold text-center text-gray-200">Opportunity for adventure & travels</h2>
 		<div className="divide-y divide-gray-700">

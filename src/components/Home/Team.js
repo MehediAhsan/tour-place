@@ -2,11 +2,11 @@ import React from 'react';
 
 const Team = () => {
     return (
-        <section data-aos="fade-up" data-aos-duration="1000" className="  dark:text-gray-200">
+        <section className="  dark:text-gray-200">
 	<div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
-    <h1 className="text-2xl md:text-3xl font-semibold leading-none text-center text-primary">Our <span className='text-red-500'>Team</span></h1>
+    <h1 data-aos="zoom-in" data-aos-duration="1000" className="text-2xl md:text-3xl font-semibold leading-none text-center text-primary">Our <span className='text-red-500'>Team</span></h1>
 		
-		<div className="flex flex-row flex-wrap-reverse justify-center">
+		<div data-aos="fade-up" data-aos-duration="1000" className="flex flex-row flex-wrap-reverse justify-center">
 			<div className="flex flex-col justify-center m-8 text-center">
 				<img alt="" className="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src="https://source.unsplash.com/100x100/?portrait?0" />
 				<p className="text-xl font-semibold leading-tight">Leroy Jenkins</p>
