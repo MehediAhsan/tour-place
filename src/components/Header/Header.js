@@ -67,9 +67,9 @@ const Header = () => {
           </li>
           <li>
             <Link
-              to="/"
-              aria-label="About us"
-              title="About us"
+              to="/contact"
+              aria-label="Contact"
+              title="Contact"
               className="font-medium tracking-wide text-gray-200 transition-colors duration-200 hover:text-deep-purple-accent-400"
             >
               Contact
@@ -204,9 +204,9 @@ const Header = () => {
                     </li>
                     <li>
                       <Link
-                        to="/"
-                        aria-label="About us"
-                        title="About us"
+                        to="/contact"
+                        aria-label="Contact"
+                        title="Contact"
                         className="font-medium tracking-wide text-gray-200 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         Contact

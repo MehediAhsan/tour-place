@@ -3,6 +3,7 @@ import About from "../components/About/About";
 import Blog from "../components/Blog/Blog";
 import Booking from "../components/Booking/Booking";
 import Checkout from "../components/Checkout/Checkout";
+import ContactUs from "../components/ContactUs/ContactUs";
 import Home from "../components/Home/Home";
 import Hotels from "../components/Hotels/Hotels";
 import Login from "../components/Login/Login/Login";
@@ -42,6 +43,10 @@ export const router = createBrowserRouter([
             {
                 path: '/about',
                 element: <About></About>
+            },
+            {
+                path: '/contact',
+                element: <ContactUs></ContactUs>
             },
             {
                 path: '/login',
