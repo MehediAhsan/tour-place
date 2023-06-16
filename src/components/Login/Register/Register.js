@@ -55,7 +55,7 @@ const Register = () => {
     }
 
     return (
-        <div className='py-28'>
+        <div data-aos="zoom-in" data-aos-duration="1000" className='py-28'>
             <div className="md:w-96 max-w-md p-5 space-y-2 rounded text-gray-200 border border-rose-500 mx-auto my-5">
                 <h1 className="text-3xl font-semibold text-center pb-3 text-rose-500">Sign up</h1>
                 <form onSubmit={handleSubmit} className="space-y-2 ng-untouched ng-pristine ng-valid">
@@ -75,7 +75,7 @@ const Register = () => {
                         <label className="block mb-2 text-sm">Password</label>
                         <input type="password" name="password" placeholder="Password" className="w-full px-4 py-3 rounded-md border text-gray-800 bg-gray-100 focus:dark:border-violet-400" required />
                     </div>
-                    <button type='submit' className="my-2 block w-full p-3 text-center rounded-sm text-white dark:bg-rose-400 font-semibold">Sign up</button>
+                    <button type='submit' className="transition my-3 block w-full p-3 text-center rounded-sm text-lg hover:bg-rose-500 font-semibold text-rose-500 border hover:text-white delay-200">Sign up</button>
                     <p className='text-red-500'>
                         {error}
                     </p>
