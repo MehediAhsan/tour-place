@@ -4,7 +4,7 @@ const About = () => {
     return (
         <div class="bg-black pt-40 pb-20 lg:pt-52">
         <div class="relative xl:container m-auto px-6 md:px-12 lg:px-6">
-            <h1 data-aos="fade-down" data-aos-duration="1000" class="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-blue-900 text-4xl text-center sm:text-4xl md:text-4xl lg:w-auto lg:text-left xl:text-5xl dark:text-white">Run successful remote and <br class="lg:block hidden"/> <span class="relative text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-cyan-400">Hybrid teams</span>.</h1>
+            <h1 data-aos="fade-down" data-aos-duration="1000" class="sm:mx-auto sm:w-10/12 md:w-2/3 font-bold text-blue-900 text-4xl text-center sm:text-4xl md:text-4xl lg:w-auto lg:text-left  dark:text-white">Run successful remote and <br class="lg:block hidden"/> <span class="relative text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-green-400">Hybrid teams</span>.</h1>
             <div class="lg:flex">
                 <div data-aos="fade-right" data-aos-duration="1000" class="relative mt-8 md:mt-16 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto text-center lg:text-left lg:mr-auto lg:w-7/12">
                     <p class="sm:text-lg text-gray-700 dark:text-gray-300 lg:w-11/12">
