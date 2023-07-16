@@ -65,7 +65,7 @@ const Gallery = () => {
             </FacebookShareButton>
           </li>
           <li class="mr-2">
-            <a href="#" class="flex text-gray-400 hover:text-gray-600">
+            <a href="/" class="flex text-gray-400 hover:text-gray-600">
               <svg class="mr-0.5" style={{width:"24px",height:"24px"}} viewBox="0 0 24 24">
                 <path fill="currentColor" d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" />
               </svg>
@@ -73,7 +73,7 @@ const Gallery = () => {
             </a>
           </li>
           <li class="mr-2">
-            <a href="#" class="flex text-gray-400 hover:text-gray-600">
+            <a href="/" class="flex text-gray-400 hover:text-gray-600">
               <svg class="mr-0.5" style={{width:"24px",height:"24px"}} viewBox="0 0 24 24">
                 <path fill="currentColor" d="M9,22A1,1 0 0,1 8,21V18H4A2,2 0 0,1 2,16V4C2,2.89 2.9,2 4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H13.9L10.2,21.71C10,21.9 9.75,22 9.5,22V22H9Z" />
               </svg>
