@@ -64,7 +64,7 @@ const Home = () => {
       <div className='bg-black overflow-hidden '>
         <div className="bg-black bg-opacity-80 min-h-screen bg-no-repeat bg-cover shadow" style={{ backgroundImage: `url(${selectedPlace.picture})` }} >
           {/*min-h-screen bg-no-repeat bg-cover shadow  style={{ backgroundImage: `url(${selectedPlace.picture})` }} */}
-          <div className="bg-black bg-opacity-90 w-full h-screen flex items-end justify-end">
+          <div className="bg-black bg-opacity-80 w-full h-screen flex items-end justify-end">
             <div className='grid grid-cols-1 md:grid-cols-2'>
             <div data-aos="fade-right" data-aos-duration="1000" className='flex items-end justify-center md:pb-20'>
                 <HomeTopSide key={selectedPlace.id} selectedPlace={selectedPlace}></HomeTopSide>
@@ -74,7 +74,7 @@ const Home = () => {
             <div data-aos="fade-down" data-aos-duration="1000" className=' md:p-20 lg:p-10 mt-10'>
             <Slider {...settings}>
                 {
-                    places.map( place => <HomeCard key={place.id} place={place} handleSelectPlace={handleSelectPlace}></HomeCard>)
+                    places.map( place => <HomeCard key={place.id} place={place} handleSelectPlace={handleSelectPlace} selectedPlace={selectedPlace}></HomeCard>)
                 }
             </Slider>
             </div>
