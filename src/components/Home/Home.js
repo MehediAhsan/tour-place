@@ -89,7 +89,6 @@ const Home = () => {
             <Starts></Starts>
             <Steps></Steps>
             <Contact></Contact>
-            <Footer></Footer>
         
         </div>
     );
