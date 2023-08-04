@@ -46,10 +46,10 @@ const Gallery = () => {
 <h1 data-aos="zoom-in" data-aos-duration="1000" className="text-2xl md:text-3xl font-semibold leading-none text-center text-gray-200  mb-5">Best <span className='text-rose-500'>Places</span></h1>
 <div data-aos="fade-up" data-aos-duration="1000" class="flex min-h-screen w-full flex-wrap content-center justify-center p-2 md:p-5 ">
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-8">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-10">
 
       {
-        places.map( place =><div class="md:w-80  p-3">
+        places.map( place =><div class="md:w-96 p-3 border border-green-500 rounded">
         <img alt='' class="h-52 w-full object-cover" src={place.img} />
         <ul class="mt-3 flex flex-wrap">
           <li class="mr-auto">
