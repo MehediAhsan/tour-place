@@ -16,6 +16,7 @@ import Travel from './Travel';
 import Steps from './Steps';
 import Countdown from './Countdown';
 import SeasonalRecommendations from './SeasonalRecommendations';
+import SpecialOffers from './SpecialOffers';
 
 const Home = () => {
     const places = useLoaderData();
@@ -91,6 +92,7 @@ const Home = () => {
             <SeasonalRecommendations></SeasonalRecommendations>
             <Review></Review>
             <Starts></Starts>
+            <SpecialOffers></SpecialOffers>
             <Steps></Steps>
             <Contact></Contact>
         
