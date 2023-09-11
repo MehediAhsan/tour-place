@@ -14,6 +14,7 @@ import Gallery from './Gallery';
 import Team from './Team';
 import Travel from './Travel';
 import Steps from './Steps';
+import Countdown from './Countdown';
 
 const Home = () => {
     const places = useLoaderData();
@@ -85,6 +86,7 @@ const Home = () => {
             <Gallery></Gallery>
             <Team></Team>
             <Travel></Travel>
+            <Countdown></Countdown>
             <Review></Review>
             <Starts></Starts>
             <Steps></Steps>
