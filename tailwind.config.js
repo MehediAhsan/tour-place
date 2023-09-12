@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'Berkshire': ['Berkshire Swash', 'cursive'],
+        'Lato': ['Lato', 'sans-serif']
       }
     },
   },

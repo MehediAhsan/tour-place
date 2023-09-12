@@ -8,7 +8,7 @@ AOS.init();
 
 function App() {
   return (
-    <div className='bg-black overflow-hidden'>
+    <div className='bg-black overflow-hidden font-Lato'>
       <RouterProvider router={router}></RouterProvider>
     </div>
   );
