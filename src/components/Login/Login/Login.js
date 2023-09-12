@@ -73,7 +73,7 @@ const Login = () => {
 
 
     return (
-        <div data-aos="zoom-in" data-aos-duration="1000" className='py-28'>
+        <div className='py-28'>
             <div className="md:w-96 max-w-md p-5 space-y-2 rounded text-gray-200 border border-rose-500 mx-auto my-5">
                 <h1 className="text-3xl font-semibold text-center pb-2 text-rose-500">Login</h1>
                 <form onSubmit={handleSubmit} className="space-y-2 ng-untouched ng-pristine ng-valid">
