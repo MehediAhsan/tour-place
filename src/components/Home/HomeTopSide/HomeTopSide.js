@@ -10,7 +10,7 @@ const HomeTopSide = ({selectedPlace}) => {
             <div className=" text-neutral-content">
                 <div className="max-w-full px-4 md:px-20 lg:px-14 mx-auto">
                 <h1 className="mb-5 text-2xl md:text-5xl text-rose-500 font-Berkshire" >{name} 🛩️</h1>
-                <p className="mb-5 text-rose-200 md:font-semibold text-base">
+                <p className="mb-5 text-rose-100 text-lg">
                     {
                         details?.length > 200 ?
                         <>
