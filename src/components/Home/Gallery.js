@@ -1,103 +1,107 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { FacebookIcon, FacebookShareButton } from 'react-share';
 
 const Gallery = () => {
   const [count, setCount] = useState(3);
 
-  const shareUrl = 'https://blog.flyticket.com.bd/wp-content/uploads/2020/05/image007.jpg';
-
   const places = [
     {
-        id:"1",
-        name: "html",
-        img: "https://blog.flyticket.com.bd/wp-content/uploads/2020/05/image007.jpg"
-    },
-    {
-        id:"2",
-        name: "css",
-        img: "https://thesimpletravel.com/wp-content/uploads/2022/02/Tourist-Places-in-Bangladesh.jpg"
-    },
-    {
-        id:"3",
-        name: "javascript",
-        img: "https://www.tbsnews.net/sites/default/files/styles/big_2/public/images/2020/09/27/sajek_valley_d.jpg"
-    },
-    {
-        id:"4",
-        name: "react",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDZHJIRxAanu1cYkZ3pWuoOZFwicl_wk9Lkg&usqp=CAU"
-    },
-    {
-      id:"5",
+      id: "1",
       name: "html",
-      img: "https://blog.flyticket.com.bd/wp-content/uploads/2020/05/image007.jpg"
+      img: "https://blog.flyticket.com.bd/wp-content/uploads/2020/05/image007.jpg",
     },
     {
-      id:"6",
+      id: "2",
       name: "css",
-      img: "https://thesimpletravel.com/wp-content/uploads/2022/02/Tourist-Places-in-Bangladesh.jpg"
-    }
-]
+      img: "https://thesimpletravel.com/wp-content/uploads/2022/02/Tourist-Places-in-Bangladesh.jpg",
+    },
+    {
+      id: "3",
+      name: "javascript",
+      img: "https://www.tbsnews.net/sites/default/files/styles/big_2/public/images/2020/09/27/sajek_valley_d.jpg",
+    },
+    {
+      id: "4",
+      name: "react",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDZHJIRxAanu1cYkZ3pWuoOZFwicl_wk9Lkg&usqp=CAU",
+    },
+    {
+      id: "5",
+      name: "html",
+      img: "https://blog.flyticket.com.bd/wp-content/uploads/2020/05/image007.jpg",
+    },
+    {
+      id: "6",
+      name: "css",
+      img: "https://thesimpletravel.com/wp-content/uploads/2022/02/Tourist-Places-in-Bangladesh.jpg",
+    },
+  ];
 
-    return (
-       
-<div className=' py-16'>
-<h1 data-aos="zoom-in" data-aos-duration="1000" className="text-2xl md:text-3xl font-semibold leading-none text-center text-gray-200  mb-5">Best <span className='text-rose-500'>Places</span></h1>
-<div data-aos="fade-up" data-aos-duration="1000" class="flex min-h-screen w-full flex-wrap content-center justify-center p-2 md:p-5 ">
-
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-10">
-
-      {
-        places.map( place =><div class="md:w-96 p-3 border border-green-500 rounded">
-        <img alt='' class="h-52 w-full object-cover" src={place.img} />
-        <ul class="mt-3 flex flex-wrap">
-          <li class="mr-auto">
-            
-            <FacebookShareButton url={shareUrl}>
-            <button class="flex text-gray-400 hover:text-gray-600">
-              <svg class="mr-0.5" style={{width:"24px",height:"24px"}} viewBox="0 0 24 24">
-                <path fill="currentColor" d="M21,12L14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12Z" />
-              </svg>
-              <FacebookIcon class="mr-0.5" style={{width:"22px",height:"22px"}} round={true}></FacebookIcon>
-              
-            </button>
-            </FacebookShareButton>
-          </li>
-          <li class="mr-2">
-            <a href="/" class="flex text-gray-400 hover:text-gray-600">
-              <svg class="mr-0.5" style={{width:"24px",height:"24px"}} viewBox="0 0 24 24">
-                <path fill="currentColor" d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" />
-              </svg>
-              24
-            </a>
-          </li>
-          <li class="mr-2">
-            <a href="/" class="flex text-gray-400 hover:text-gray-600">
-              <svg class="mr-0.5" style={{width:"24px",height:"24px"}} viewBox="0 0 24 24">
-                <path fill="currentColor" d="M9,22A1,1 0 0,1 8,21V18H4A2,2 0 0,1 2,16V4C2,2.89 2.9,2 4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H13.9L10.2,21.71C10,21.9 9.75,22 9.5,22V22H9Z" />
-              </svg>
-              3
-            </a>
-          </li>
-          <li>
-            <button onClick={() => setCount(count + 1)} class="flex text-gray-400 hover:text-red-600">
-              <svg class="mr-0.5" style={{width:"24px",height:"24px"}} viewBox="0 0 24 24">
-                <path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
-              </svg>
-              {count}
-            </button>
-          </li>
-        </ul>
-      </div>)
-      }
-    
-
-
-  </div>
-</div>
-</div>
-    );
+  return (
+    <div className="py-16">
+      <h1
+        data-aos="fade-in"
+        data-aos-duration="1000"
+        className="text-2xl md:text-4xl font-semibold text-center text-gray-200 mb-5"
+      >
+        Places We Love
+      </h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4 md:p-8 mx-auto max-w-screen-xl">
+        {places.map((place) => (
+          <div
+            key={place.id}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="bg-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              alt={place.name}
+              className="w-full h-52 object-cover"
+              src={place.img}
+            />
+            <div className="p-4">
+              <div className="flex items-center justify-between">
+                <h2 className="text-lg font-semibold text-gray-800">
+                  {place.name}
+                </h2>
+                <div className="flex space-x-2">
+                  <FacebookShareButton url={place.img}>
+                    <button className="text-gray-400 hover:text-blue-500 focus:outline-none">
+                      <FacebookIcon
+                        size={24}
+                        round
+                        className="text-blue-500"
+                      />
+                    </button>
+                  </FacebookShareButton>
+                  <button
+                    onClick={() => setCount(count + 1)}
+                    className="text-gray-400 hover:text-red-500 focus:outline-none"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-6 h-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                  </button>
+                  <span className="text-gray-400">{count}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Gallery;

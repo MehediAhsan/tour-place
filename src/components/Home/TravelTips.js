@@ -4,7 +4,7 @@ import { IoIosAirplane, IoMdCompass } from 'react-icons/io';
 
 const TravelTips = () => {
   return (
-    <section className=" py-12">
+    <section data-aos="fade-up" data-aos-duration="1000" className=" py-12">
       <div className="container mx-auto text-center">
         <h2 className="text-4xl font-semibold text-gray-200 mb-8">
           Travel Tips and Resources

@@ -95,7 +95,7 @@ const Review = () => {
           }
         >
           {reviews.map((review, index) => (
-            <div data-aos="zoom-in" data-aos-duration="1000" key={index} className="carousel-item">
+            <div key={index} className="carousel-item">
               <div className="relative border rounded-lg p-8 mx-2">
                 <div className="text-center">
                   <RiChatQuoteFill className="text-primary text-2xl mb-4" />
