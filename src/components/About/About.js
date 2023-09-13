@@ -1,8 +1,10 @@
 import React from 'react';
+import Chatbot from './Chatbot';
 
 const About = () => {
     return (
         <div class="bg-black py-40 pb-20 lg:py-52">
+            <Chatbot></Chatbot>
         <div class="relative xl:container m-auto px-6 md:px-12 lg:px-6">
             <h1 data-aos="fade-down" data-aos-duration="1000" class="sm:mx-auto sm:w-10/12 md:w-2/3 font-bold text-blue-900 text-4xl text-center sm:text-4xl md:text-4xl lg:w-auto lg:text-left  dark:text-white">Run successful remote and <br class="lg:block hidden"/> <span class="relative text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-green-400">Hybrid teams</span>.</h1>
             <div class="lg:flex">
