@@ -37,10 +37,10 @@ const seasonalRecommendationsData = [
 
 const SeasonalRecommendations = () => {
   return (
-    <section className="py-12">
+    <section data-aos="fade-up" data-aos-duration="1000" className="py-20">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-semibold text-center mb-8 text-gray-200">Seasonal Recommendations</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <h2 className="text-2xl md:text-4xl font-semibold text-center mb-16 text-gray-200">Seasonal Recommendations</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mx-4">
           {seasonalRecommendationsData.map((recommendation) => (
             <div key={recommendation.id} className="bg-white rounded-lg shadow-lg p-6">
               <img

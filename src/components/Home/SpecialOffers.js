@@ -54,12 +54,12 @@ const SpecialOffers = () => {
   ];
 
   return (
-    <section className="py-16">
+    <section className="py-20">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-semibold text-center text-gray-200 mb-10">
+        <h2 className="text-2xl md:text-4xl font-semibold text-center text-gray-200 mb-10">
           Special Offers and Discounts
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-4">
           {offers.map((offer, index) => (
             <div
               key={index}

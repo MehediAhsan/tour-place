@@ -6,10 +6,10 @@ const TravelTips = () => {
   return (
     <section data-aos="fade-up" data-aos-duration="1000" className=" py-12">
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-semibold text-gray-200 mb-8">
+        <h2 className="text-2xl md:text-4xl font-semibold text-gray-200 mb-8">
           Travel Tips and Resources
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-4">
           {/* Travel Tip Cards */}
           {travelTips.map((tip, index) => (
             <div

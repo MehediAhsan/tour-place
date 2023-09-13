@@ -2,7 +2,7 @@ import React from 'react';
 
 const Travel = () => {
   return (
-    <section className="bg-black text-white py-20">
+    <section className=" text-white py-20">
       <div className="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
         <div
           data-aos="fade-right"
@@ -32,9 +32,9 @@ const Travel = () => {
           className="p-8 mt-12 md:mt-0 ml-0 md:ml-12 lg:w-1/2 justify-center"
         >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="h-64 md:h-80 bg-cover bg-center rounded-lg shadow-lg" style={{ backgroundImage: 'url(https://user-images.githubusercontent.com/54521023/116969935-c13d5b00-acd4-11eb-82b1-5ad2ff10fb76.png)' }}></div>
-            <div className="h-64 md:h-80 bg-cover bg-center rounded-lg shadow-lg" style={{ backgroundImage: 'url(https://user-images.githubusercontent.com/54521023/116969931-bedb0100-acd4-11eb-99a9-ff5e0ee9f31f.png)' }}></div>
-            <div className="h-64 md:h-80 bg-cover bg-center rounded-lg shadow-lg" style={{ backgroundImage: 'url(https://user-images.githubusercontent.com/54521023/116969939-c1d5f180-acd4-11eb-8ad4-9ab9143bdb50.png)' }}></div>
+            <img className="h-64 md:h-80 shadow-lg" src="https://user-images.githubusercontent.com/54521023/116969935-c13d5b00-acd4-11eb-82b1-5ad2ff10fb76.png" alt='picturetour'></img>
+            <img className="h-64 md:h-80 shadow-lg" src="https://user-images.githubusercontent.com/54521023/116969931-bedb0100-acd4-11eb-99a9-ff5e0ee9f31f.png" alt='picturetour'></img>
+            <img className="h-64 md:h-80 shadow-lg" src="https://user-images.githubusercontent.com/54521023/116969939-c1d5f180-acd4-11eb-8ad4-9ab9143bdb50.png" alt='picturetour'></img>
           </div>
         </div>
       </div>

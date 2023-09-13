@@ -36,24 +36,24 @@ const Countdown = () => {
   }, []);
 
   return (
-    <div className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white py-12">
+    <div className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white py-14 my-14">
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-semibold mb-4">Upcoming Tour Countdown</h2>
-        <div className="flex justify-center space-x-6">
+        <h2 className="text-2xl md:text-4xl font-semibold mb-4">Upcoming Tour Countdown</h2>
+        <div className="flex justify-center flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
           <div className="countdown-item">
-            <span className="text-4xl font-bold">{countdown.days}</span>
+            <span className="text-2xl md:text-4xl font-bold">{countdown.days}</span>
             <span className="text-xl">Days</span>
           </div>
           <div className="countdown-item">
-            <span className="text-4xl font-bold">{countdown.hours}</span>
+            <span className="text-2xl md:text-4xl font-bold">{countdown.hours}</span>
             <span className="text-xl">Hours</span>
           </div>
           <div className="countdown-item">
-            <span className="text-4xl font-bold">{countdown.minutes}</span>
+            <span className="text-2xl md:text-4xl font-bold">{countdown.minutes}</span>
             <span className="text-xl">Minutes</span>
           </div>
           <div className="countdown-item">
-            <span className="text-4xl font-bold">{countdown.seconds}</span>
+            <span className="text-2xl md:text-4xl font-bold">{countdown.seconds}</span>
             <span className="text-xl">Seconds</span>
           </div>
         </div>
