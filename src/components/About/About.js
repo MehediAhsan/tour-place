@@ -1,62 +1,92 @@
 import React from 'react';
 import Chatbot from './Chatbot';
+import { FaGlobe, FaPlane, FaUsers } from 'react-icons/fa';
 
 const About = () => {
     return (
-        <div class="bg-black py-40 pb-20 lg:py-52">
-            <Chatbot></Chatbot>
-        <div class="relative xl:container m-auto px-6 md:px-12 lg:px-6">
-            <h1 data-aos="fade-down" data-aos-duration="1000" class="sm:mx-auto sm:w-10/12 md:w-2/3 font-bold text-blue-900 text-4xl text-center sm:text-4xl md:text-4xl lg:w-auto lg:text-left  dark:text-white">Run successful remote and <br class="lg:block hidden"/> <span class="relative text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-green-400">Hybrid teams</span>.</h1>
-            <div class="lg:flex">
-                <div data-aos="fade-right" data-aos-duration="1000" class="relative mt-8 md:mt-16 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto text-center lg:text-left lg:mr-auto lg:w-7/12">
-                    <p class="sm:text-lg text-gray-700 dark:text-gray-300 lg:w-11/12">
-                        DailyBot takes chat and collaboration to the next level: daily standups, team check-ins, surveys, kudos, best companion bot for your virtual watercooler, 1:1 intros, motivation tracking and more.
-                    </p>
-                    <span class="block font-semibold text-gray-500 dark:text-gray-400">The best companion bot for your chat app.</span>
-                    <div class="grid grid-cols-3 space-x-4 md:space-x-6 md:flex md:justify-center lg:justify-start">
-                        <a aria-label="add to slack" href="#" class="p-4 border border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-full duration-300 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-600/20 dark:hover:border-cyan-300/30">
-                            <div class="flex justify-center space-x-4">
-                                <img class="w-6 h-6" src="https://tailus.io/sources/blocks/tech-startup/preview/images/slack.png" alt="slack logo" loading="lazy" width="128" height="128"/>
-                                <span class="hidden font-medium md:block dark:text-white">Slack</span>
-                            </div>
-                        </a>    
-                        <a aria-label="add to chat" href="#" class="p-4 border border-gray-200 dark:bg-gray-800  dark:border-gray-700 rounded-full duration-300 hover:border-green-400 hover:shadow-lg hover:shadow-lime-600/20 dark:hover:border-green-300/30">
-                            <div class="flex justify-center space-x-4">
-                                <img class="w-6 h-6" src="https://tailus.io/sources/blocks/tech-startup/preview/images/chat.png" alt="chat logo" loading="lazy" width="128" height="128"/>
-                                <span class="hidden font-medium md:block dark:text-white">Google Chat</span>
-                            </div>
-                        </a>   
-                        <a aria-label="add to zoom" href="#" class="p-4 border border-gray-200 dark:bg-gray-800  dark:border-gray-700 rounded-full duration-300 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-600/20 dark:hover:border-blue-300/30">
-                            <div class="flex justify-center space-x-4">
-                                <img class="w-6 h-6" src="https://tailus.io/sources/blocks/tech-startup/preview/images/zoom.png" alt="chat logo" loading="lazy" width="128" height="128"/>
-                                <span class="hidden font-medium md:block dark:text-white">Zoom</span>
-                            </div>
-                        </a>    
-                    </div>
-
-                    <div class="dark:text-gray-300">
-                        🔥🌟 
-                        <span>Other integrations :</span> 
-                        <a href="#" class="font-semibold text-gray-700 dark:text-gray-200">Discord,</a>
-                        <a href="#" class="font-semibold text-gray-700 dark:text-gray-200">Telegram</a>
-                    </div>
-
-                    <div class="pt-12 flex gap-6 lg:gap-12 justify-between grayscale lg:w-2/3">
-                        <img src="https://tailus.io/sources/blocks/tech-startup/preview/images/clients/airbnb.svg" class="h-8 sm:h-10 w-auto lg:h-12" alt="" />
-                        <img src="https://tailus.io/sources/blocks/tech-startup/preview/images/clients/ge.svg" class="h-8 sm:h-10 w-auto lg:h-12" alt="" />
-                        <img src="https://tailus.io/sources/blocks/tech-startup/preview/images/clients/coty.svg" class="h-8 sm:h-10 w-auto lg:h-12" alt="" />
-                        <img src="https://tailus.io/sources/blocks/tech-startup/preview/images/clients/microsoft.svg" class="h-8 sm:h-10 w-auto lg:h-12" alt="" />
-                    </div>
-                </div>
-                <div data-aos="fade-left" data-aos-duration="1000" class="mt-12 md:mt-0 lg:absolute -right-10 lg:w-7/12">
-                    <div class="relative w-full">
-                        <div aria-hidden="true" class="absolute scale-75 md:scale-110 inset-0 m-auto w-full h-full md:w-96 md:h-96 rounded-full rotate-45 bg-gradient-to-r blur-3xl"></div>
-                        <img src="https://tailus.io/sources/blocks/tech-startup/preview/images/globalization-cuate.svg" class="relative w-full" alt="wath illustration" loading="lazy" width="320" height="280"/>
-                    </div>
-                </div>
+        <div>
+            <div className="flex justify-center items-center py-28">
+        <div className="max-w-7xl p-6 rounded-lg shadow-lg transform  transition-transform duration-300">
+          <h1 className="text-4xl font-semibold text-center text-gray-200 pb-10">
+            About Our Website
+          </h1>
+          <p className="mt-4 text-lg text-gray-300">
+            Welcome to our tour booking website! We are dedicated to providing you
+            with unforgettable travel experiences.
+          </p>
+  
+          <div className="mt-8 flex justify-center">
+            <div className="flex items-center mr-6">
+              <FaGlobe className="text-3xl text-blue-500 mr-2" />
+              <span className="text-xl">Global Reach</span>
             </div>
+            <div className="flex items-center mr-6">
+              <FaPlane className="text-3xl text-green-500 mr-2" />
+              <span className="text-xl">Travel Experts</span>
+            </div>
+            <div className="flex items-center">
+              <FaUsers className="text-3xl text-indigo-500 mr-2" />
+              <span className="text-xl">Community</span>
+            </div>
+          </div>
+  
+          <div className="mt-8">
+            <h2 className="text-2xl font-semibold text-gray-200">Our Mission</h2>
+            <p className="mt-2 text-gray-300">
+              At Tour Place Website, our mission is to connect travelers with
+              incredible destinations, experiences, and cultures. We believe that
+              travel enriches lives and builds bridges between people.
+            </p>
+          </div>
+  
+          <div className="mt-8">
+            <h2 className="text-2xl font-semibold text-gray-200">Meet Our Team</h2>
+            <div className="mt-4 flex flex-wrap gap-4">
+              <div className="flex items-center">
+                <img
+                  src="https://s.hdnux.com/photos/51/23/24/10827008/4/1200x0.jpg"
+                  alt="Team Member 1"
+                  className="w-12 h-12 rounded-full"
+                />
+                <span className="ml-2 font-semibold text-gray-200">John Doe</span>
+              </div>
+              <div className="flex items-center">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_a5NHreojXWpM9_VEIFrm8q92m-UorIkH_suQzFurC6hUeL8ETv-9l6rCvl92kePxaCQ&usqp=CAU"
+                  alt="Team Member 2"
+                  className="w-12 h-12 rounded-full"
+                />
+                <span className="ml-2 font-semibold text-gray-200">Jane Smith</span>
+              </div>
+              {/* Add more team members as needed */}
+            </div>
+          </div>
+  
+          <div className="mt-8">
+            <h2 className="text-2xl font-semibold text-gray-200">Our Partners</h2>
+            <div className="mt-4">
+              <p className="text-gray-200">
+                We are proud to partner with leading airlines, hotels, and travel
+                agencies to bring you the best travel experiences. Our partners
+                share our commitment to quality and customer satisfaction.
+              </p>
+            </div>
+          </div>
+  
+          <div className="mt-8">
+            <h2 className="text-2xl font-semibold text-gray-200">Contact Us</h2>
+            <div className="mt-4">
+              <p className="text-gray-200">
+                Have questions or need assistance? Feel free to reach out to our
+                support team at <a href="mailto:support@example.com">support@example.com</a>.
+              </p>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+      <h1 className="text-4xl font-semibold text-center text-gray-200 pb-10" >Any Query Message Here! 🤔</h1>
+      <Chatbot></Chatbot>
+        </div>
     );
 };
 

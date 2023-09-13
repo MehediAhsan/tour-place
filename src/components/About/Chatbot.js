@@ -43,8 +43,8 @@ const Chatbot = () => {
   };
 
   return (
-    <div className="flex flex-col h-full">
-      <div className="flex-grow bg-gray-100 p-4 overflow-y-auto">
+    <div className="max-w-5xl mx-auto flex flex-col h-full pb-20">
+      <div className="flex-grow  p-4 overflow-y-auto">
         {messages.map((message, index) => (
           <div
             key={index}
@@ -54,7 +54,7 @@ const Chatbot = () => {
           </div>
         ))}
       </div>
-      <div className="bg-white p-4">
+      <div className=" p-4">
         <div className="flex space-x-2">
           <input
             type="text"
