@@ -85,6 +85,7 @@ const Home = () => {
             </div>
             </div>
             {/* </div> */}
+            <SpecialOffers></SpecialOffers>
             <Gallery></Gallery>
             <Team></Team>
             <Travel></Travel>
@@ -92,7 +93,6 @@ const Home = () => {
             <SeasonalRecommendations></SeasonalRecommendations>
             <Review></Review>
             <Starts></Starts>
-            <SpecialOffers></SpecialOffers>
             <Steps></Steps>
             <Contact></Contact>
         
