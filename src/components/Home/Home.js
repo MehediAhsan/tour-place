@@ -86,12 +86,12 @@ const Home = () => {
             </div>
             {/* </div> */}
             <SpecialOffers></SpecialOffers>
-            <Gallery></Gallery>
-            <Team></Team>
-            <Travel></Travel>
             <Countdown></Countdown>
             <SeasonalRecommendations></SeasonalRecommendations>
             <Review></Review>
+            <Gallery></Gallery>
+            <Team></Team>
+            <Travel></Travel>
             <Starts></Starts>
             <Steps></Steps>
             <Contact></Contact>
