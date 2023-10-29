@@ -74,9 +74,9 @@ const Login = () => {
 
     return (
         <div className='py-28'>
-            <div className="md:w-96 max-w-md p-5 space-y-2 rounded text-gray-200 border border-rose-500 mx-auto my-5">
+            <div className="md:w-96 max-w-md p-5 space-y-2 rounded text-gray-200 shadow shadow-rose-300 mx-auto my-5">
                 <h1 className="text-3xl font-semibold text-center pb-2 text-rose-500">Login</h1>
-                <form onSubmit={handleSubmit} className="space-y-2 ng-untouched ng-pristine ng-valid">
+                <form onSubmit={handleSubmit} className="space-y-4 ng-untouched ng-pristine ng-valid">
                     <div>
                         <label className="block mb-2 text-sm">Email address</label>
                         <input type="email" name="email" placeholder="Email" className="w-full px-3 py-2 border rounded-md  text-gray-200 bg-gray-100" required />
@@ -88,7 +88,7 @@ const Login = () => {
                             <Link rel="noopener noreferrer" href="#">Forgot Password?</Link>
                         </div>
                     </div>
-                    <button type='submit' className="transition block w-full p-3 text-center rounded-sm text-lg hover:bg-rose-500 font-semibold text-rose-500 border hover:text-white delay-200">Login</button>
+                    <button type='submit' className="block w-full p-3 text-center rounded-sm text-xl shadow shadow-rose-200 font-medium text-rose-500 transition delay-300 hover:bg-rose-500  hover:text-white">Login</button>
                     <p className='text-red-500'>
                         {error}
                     </p>

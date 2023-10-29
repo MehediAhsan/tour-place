@@ -40,16 +40,16 @@ const SeasonalRecommendations = () => {
     <section data-aos="fade-up" data-aos-duration="1000" className="py-20">
       <div className="container mx-auto">
         <h2 className="text-2xl md:text-4xl font-semibold text-center mb-16 text-gray-200">Seasonal Recommendations</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mx-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mx-4">
           {seasonalRecommendationsData.map((recommendation) => (
-            <div key={recommendation.id} className="bg-white rounded-lg shadow-lg p-6">
+            <div key={recommendation.id} className="shadow-md shadow-white rounded-lg p-4">
               <img
                 src={recommendation.imageUrl}
                 alt={recommendation.title}
                 className="w-full h-60 object-cover rounded-md mb-4"
               />
-              <h3 className="text-xl font-semibold mb-2">{recommendation.title}</h3>
-              <p className="text-gray-600 mb-4">{recommendation.description}</p>
+              <h3 className="text-xl font-semibold mb-2 text-white">{recommendation.title}</h3>
+              <p className="text-gray-200 mb-4">{recommendation.description.slice(0,80)}...</p>
               <div className="flex items-center justify-center">
                 <a href={recommendation.link} className="text-blue-500 hover:underline">
                   Explore {recommendation.season}

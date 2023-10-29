@@ -47,7 +47,7 @@ const Team = () => {
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300"
+              className="1rounded-lg overflow-hidden shadow-md shadow-rose-100 transform hover:scale-105 transition-transform duration-300"
             >
               <img
                 alt={member.name}

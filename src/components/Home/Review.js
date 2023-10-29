@@ -96,7 +96,7 @@ const Review = () => {
         >
           {reviews.map((review, index) => (
             <div key={index} className="carousel-item">
-              <div className="relative border rounded-lg p-8 mx-2">
+              <div className="relative shadow-md shadow-white border-y rounded-lg p-8 mx-2">
                 <div className="text-center">
                   <RiChatQuoteFill className="text-primary text-2xl mb-4" />
                   <p className="text-gray-200 text-lg italic">{review.content}</p>

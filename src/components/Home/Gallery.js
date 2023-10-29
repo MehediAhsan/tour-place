@@ -7,32 +7,32 @@ const Gallery = () => {
   const places = [
     {
       id: "1",
-      name: "html",
+      name: "Rangamati",
       img: "https://blog.flyticket.com.bd/wp-content/uploads/2020/05/image007.jpg",
     },
     {
       id: "2",
-      name: "css",
+      name: "Bandarban",
       img: "https://thesimpletravel.com/wp-content/uploads/2022/02/Tourist-Places-in-Bangladesh.jpg",
     },
     {
       id: "3",
-      name: "javascript",
+      name: "Sajek",
       img: "https://www.tbsnews.net/sites/default/files/styles/big_2/public/images/2020/09/27/sajek_valley_d.jpg",
     },
     {
       id: "4",
-      name: "react",
+      name: "Sitakundu",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDZHJIRxAanu1cYkZ3pWuoOZFwicl_wk9Lkg&usqp=CAU",
     },
     {
       id: "5",
-      name: "html",
+      name: "Chittagang",
       img: "https://blog.flyticket.com.bd/wp-content/uploads/2020/05/image007.jpg",
     },
     {
       id: "6",
-      name: "css",
+      name: "Sylet",
       img: "https://thesimpletravel.com/wp-content/uploads/2022/02/Tourist-Places-in-Bangladesh.jpg",
     },
   ];
