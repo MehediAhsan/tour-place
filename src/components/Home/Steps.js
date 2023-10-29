@@ -68,7 +68,7 @@ Safety first always</span>
 					</svg>
 				</div>
 				<div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
-					<span className="text-xs tracking-wider uppercase text-gray-200">  Step 4 - Confirm Your Booking</span>
+					<span className="text-xs tracking-wider uppercase text-gray-200">  Step 3 - Confirm Your Booking</span>
 					<span className="text-xl font-semibold md:text-2xl">Review and confirm your adventure booking.
 </span>
 					
