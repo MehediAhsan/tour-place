@@ -9,7 +9,7 @@ const Travel = () => {
           data-aos-duration="1000"
           className="flex flex-col w-full lg:w-1/2 justify-center items-start p-8"
         >
-          <h1 className="text-4xl md:text-5xl text-rose-500 tracking-tight font-extrabold leading-tight mb-2">
+          <h1 className="text-4xl md:text-5xl text-blue-500 tracking-tight font-extrabold leading-tight mb-2">
 		  Adventures Await
           </h1>
           <h2 className="text-2xl md:text-3xl leading-snug mb-4">
@@ -21,7 +21,7 @@ const Travel = () => {
           </p>
           <a
             href="/"
-            className="bg-rose-500 hover:bg-rose-600 text-white py-3 px-6 rounded-full font-semibold transition duration-300 ease-in-out transform hover:scale-105"
+            className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-full font-semibold transition duration-300 ease-in-out transform hover:scale-105"
           >
             Explore Now
           </a>

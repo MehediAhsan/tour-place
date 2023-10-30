@@ -81,7 +81,7 @@ const Header = () => {
               <>
                 <li>
                   <button onClick={handleLogOut}
-                    className="inline-flex items-center justify-center h-11 px-4 font-medium text-lg tracking-wide text-rose-400 hover:text-white transition duration-200 rounded shadow-md border border-rose-200 hover:bg-rose-500"
+                    className="inline-flex items-center justify-center h-10 px-3 font-medium text-lg tracking-wide text-rose-400 hover:text-white transition duration-200 rounded shadow hover:bg-rose-500 shadow-rose-200"
                     aria-label="Login"
                     title="Login"
                   >
@@ -104,7 +104,7 @@ const Header = () => {
                 <li>
                   <Link
                     to="/login"
-                    className="inline-flex items-center justify-center h-11 px-4 font-medium text-lg tracking-wide text-rose-400 hover:text-white transition duration-200 rounded shadow-md border border-rose-200 hover:bg-rose-500"
+                    className="inline-flex items-center justify-center h-10 px-3 font-medium text-lg tracking-wide text-rose-400 hover:text-white transition duration-200 rounded shadow hover:bg-rose-500 shadow-rose-200"
                     aria-label="Login"
                     title="Login"
                   >
@@ -218,7 +218,7 @@ const Header = () => {
               <>
                 <li>
                   <button onClick={handleLogOut}
-                    className="inline-flex items-center justify-center h-11 px-4 font-medium text-lg tracking-wide text-rose-400 hover:text-white transition duration-200 rounded shadow-md border border-rose-200 hover:bg-rose-500"
+                    className="inline-flex items-center justify-center h-10 px-3 font-medium text-lg tracking-wide text-rose-400 hover:text-white transition duration-200 rounded shadow hover:bg-rose-500 shadow-rose-200"
                     aria-label="Login"
                     title="Login"
                   >
@@ -241,7 +241,7 @@ const Header = () => {
                 <li>
                   <Link
                     to="/login"
-                    className="inline-flex items-center justify-center h-11 px-4 font-medium text-lg tracking-wide text-rose-400 hover:text-white transition duration-200 rounded shadow-md border border-rose-200 hover:bg-rose-500"
+                    className="inline-flex items-center justify-center h-10 px-3 font-medium text-lg tracking-wide text-rose-400 hover:text-white transition duration-200 rounded shadow hover:bg-rose-500 shadow-rose-200"
                     aria-label="Login"
                     title="Login"
                   >
