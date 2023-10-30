@@ -12,6 +12,20 @@ const ContactUs = () => {
 
     return (
         <div class="bg-black pt-28 pb-20 lg:pt-28">
+			<div className="flex flex-col md:flex-row justify-center items-center gap-10 my-10 md:mx-28">
+          <div className="w-full">
+            <h1 className="bg-blue-500 text-center uppercase p-2">Address</h1>
+            <p className="text-gray-200 shadow shadow-gray-200 text-center uppercase p-10 w-11/12 mx-auto -skew-x-3">Dhaka, Banasree</p>
+          </div>
+          <div className="w-full">
+            <h1 className="bg-blue-500 text-center uppercase p-2">Email</h1>
+            <p className="text-gray-200 shadow shadow-gray-200 text-center uppercase p-10 w-11/12 mx-auto -skew-x-3">xyx@gmail.com</p>
+          </div>
+          <div className="w-full">
+            <h1 className="bg-blue-500 text-center uppercase p-2">Phone</h1>
+            <p className="text-gray-200 shadow shadow-gray-200 text-center uppercase p-10 w-11/12 mx-auto -skew-x-3">+ 1234 5878 4544</p>
+          </div>
+          </div>
         <div data-aos="fade-up" data-aos-duration="1000" className=''>
             <div className="grid max-w-screen-xl grid-cols-1 gap-20 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 text-gray-200">
 	<div data-aos="fade-right" data-aos-duration="1000" className="flex flex-col justify-between">
