@@ -10,38 +10,38 @@ const About = () => {
           <h1 className="text-4xl font-semibold text-center text-gray-200 pb-10">
             About Our Website
           </h1>
-          <p className="mt-4 text-lg text-gray-300">
+          <p className="mt-1 text-lg text-gray-300 w-6/12 mx-auto text-center">
             Welcome to our tour booking website! We are dedicated to providing you
-            with unforgettable travel experiences.
+            with unforgettable travel experiences. User Can easily booking perticular travel place for yourself.
           </p>
   
-          <div className="mt-8 flex justify-center">
-            <div className="flex items-center mr-6">
-              <FaGlobe className="text-3xl text-blue-500 mr-2" />
-              <span className="text-xl">Global Reach</span>
-            </div>
-            <div className="flex items-center mr-6">
-              <FaPlane className="text-3xl text-green-500 mr-2" />
-              <span className="text-xl">Travel Experts</span>
+          <div className="mt-8 flex justify-center items-center gap-10">
+            <div className="flex items-center">
+              <FaGlobe className="text-5xl text-blue-500 mr-2" />
+              <span className="text-xl text-blue-500">Global Reach</span>
             </div>
             <div className="flex items-center">
-              <FaUsers className="text-3xl text-indigo-500 mr-2" />
-              <span className="text-xl">Community</span>
+              <FaPlane className="text-5xl text-green-500 mr-2" />
+              <span className="text-xl text-green-500">Travel Experts</span>
+            </div>
+            <div className="flex items-center">
+              <FaUsers className="text-5xl text-indigo-500 mr-2" />
+              <span className="text-xl text-indigo-500">Community</span>
             </div>
           </div>
   
-          <div className="mt-8">
-            <h2 className="text-2xl font-semibold text-gray-200">Our Mission</h2>
-            <p className="mt-2 text-gray-300">
+          <div className="mt-10 text-center">
+            <h2 className="text-3xl font-semibold text-gray-200">Our Mission</h2>
+            <p className="mt-4 text-gray-300 w-8/12 mx-auto text-xl">
               At Tour Place Website, our mission is to connect travelers with
               incredible destinations, experiences, and cultures. We believe that
               travel enriches lives and builds bridges between people.
             </p>
           </div>
   
-          <div className="mt-8">
-            <h2 className="text-2xl font-semibold text-gray-200">Meet Our Team</h2>
-            <div className="mt-4 flex flex-wrap gap-4">
+          <div className="mt-10 text-center">
+            <h2 className="text-3xl font-semibold text-gray-200">Meet Our Team</h2>
+            <div className="mt-6 flex flex-wrap gap-8 justify-center items-center">
               <div className="flex items-center">
                 <img
                   src="https://s.hdnux.com/photos/51/23/24/10827008/4/1200x0.jpg"
@@ -62,25 +62,21 @@ const About = () => {
             </div>
           </div>
   
-          <div className="mt-8">
-            <h2 className="text-2xl font-semibold text-gray-200">Our Partners</h2>
-            <div className="mt-4">
-              <p className="text-gray-200">
+          <div className="mt-10 text-center">
+            <h2 className="text-3xl font-semibold text-gray-200">Our Partners</h2>
+            <p className="mt-4 text-gray-300 w-8/12 mx-auto text-xl">
                 We are proud to partner with leading airlines, hotels, and travel
                 agencies to bring you the best travel experiences. Our partners
                 share our commitment to quality and customer satisfaction.
-              </p>
-            </div>
+            </p>
           </div>
   
-          <div className="mt-8">
-            <h2 className="text-2xl font-semibold text-gray-200">Contact Us</h2>
-            <div className="mt-4">
-              <p className="text-gray-200">
+          <div className="mt-10 text-center">
+            <h2 className="text-3xl font-semibold text-gray-200">Contact Us</h2>
+              <p className="mt-4 text-gray-300 w-8/12 mx-auto text-xl">
                 Have questions or need assistance? Feel free to reach out to our
                 support team at <a href="mailto:support@example.com">support@example.com</a>.
-              </p>
-            </div>
+              </p> 
           </div>
         </div>
       </div>
