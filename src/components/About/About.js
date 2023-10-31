@@ -5,8 +5,8 @@ import { FaGlobe, FaPlane, FaUsers } from 'react-icons/fa';
 const About = () => {
     return (
         <div>
-            <div className="flex justify-center items-center py-28">
-        <div className="max-w-7xl p-6 rounded-lg shadow-lg transform  transition-transform duration-300">
+            <div className="flex justify-center items-center py-28" >
+        <div className="max-w-7xl p-6 rounded-lg shadow-lg transform  transition-transform duration-300" >
           <h1 className="text-4xl font-semibold text-center text-gray-200 pb-10">
             About Our Website
           </h1>

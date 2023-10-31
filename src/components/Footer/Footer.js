@@ -61,20 +61,20 @@ const Footer = () => {
                     <div className="space-y-3">
                         <div className="uppercase dark:text-gray-200">Social media</div>
                         <div className="flex justify-start space-x-3">
-                            <Link rel="noopener noreferrer" to="/" title="Facebook" className="flex items-center p-1">
+                            <Link rel="noopener noreferrer" to="/" title="Facebook" className="flex items-center p-1 text-blue-500 text-xl">
                                 <FaFacebook></FaFacebook>
                             </Link>
-                            <Link rel="noopener noreferrer" to="/" title="Twitter" className="flex items-center p-1">
+                            <Link rel="noopener noreferrer" to="/" title="Twitter" className="flex items-center p-1 text-blue-500 text-xl">
                                 <FaTwitter></FaTwitter>
                             </Link>
-                            <Link rel="noopener noreferrer" to="/" title="Instagram" className="flex items-center p-1">
+                            <Link rel="noopener noreferrer" to="/" title="Instagram" className="flex items-center p-1 text-blue-500 text-xl">
                                 <FaInstagram></FaInstagram>
                             </Link>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="py-6 text-sm text-center dark:text-gray-500">© 2022 Company Co. All rights reserved.</div>
+            <div className="py-6 text-sm text-center text-gray-300">© 2023 Company Co. All rights reserved.</div>
         </footer>
     );
 };
