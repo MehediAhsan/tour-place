@@ -5,7 +5,7 @@ const Hotel = ({hotel}) => {
     const {name, image, description, price,place_name,id} = hotel;
     console.log(hotel)
     return (
-        <div className="flex overflow-hidden rounded shadow-lg mb-8 border border-rose-400">
+        <div className="flex overflow-hidden rounded mb-8 shadow shadow-rose-400">
             <img className='w-60' src={image} alt="" />
 
             <div className="px-8 py-5">
