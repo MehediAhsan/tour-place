@@ -74,17 +74,17 @@ const Login = () => {
 
     return (
         <div className='py-28'>
-            <div className="md:w-96 max-w-md p-5 space-y-2 rounded text-gray-200 shadow shadow-rose-300 mx-auto my-5">
+            <div className="md:w-96 max-w-md p-8 space-y-2 rounded text-gray-200 shadow shadow-rose-300 mx-auto my-5">
                 <h1 className="text-3xl font-semibold text-center pb-2 text-rose-500">Login</h1>
                 <form onSubmit={handleSubmit} className="space-y-4 ng-untouched ng-pristine ng-valid">
                     <div>
                         <label className="block mb-2 text-sm">Email address</label>
-                        <input type="email" name="email" placeholder="Email" className="w-full px-3 py-2 border rounded-md  text-gray-200 bg-gray-100" required />
+                        <input type="email" name="email" placeholder="Email" className="w-full px-3 py-2 rounded-md  text-gray-200 bg-transparent shadow shadow-gray-200" required />
                     </div>
                     <div className="space-y-1 text-sm">
                         <label className="block mb-2 text-sm">Password</label>
-                        <input type="password" name="password" placeholder="Password" className="w-full px-4 py-3 rounded-md border  text-gray-800 bg-gray-100 focus:dark:border-violet-400" required />
-                        <div className="flex justify-end text-xs dark:text-gray-400">
+                        <input type="password" name="password" placeholder="Password" className="w-full px-4 py-3 rounded-md bg-transparent shadow shadow-gray-200" required />
+                        <div className="flex justify-end text-xs text-gray-300 pt-1">
                             <Link rel="noopener noreferrer" href="#">Forgot Password?</Link>
                         </div>
                     </div>
@@ -108,8 +108,8 @@ const Login = () => {
                         <p>Login with GitHub</p>
                     </button>
                 </div>
-                <p className="px-6 text-sm text-center dark:text-gray-400">Don't have an account yet?
-				<Link rel="noopener noreferrer" to="/register" className="hover:underline dark:text-violet-500">Sign up</Link>.
+                <p className="px-6 text-sm text-center text-gray-200">Don't have an account yet? 
+				<Link rel="noopener noreferrer" to="/register" className="hover:underline dark:text-violet-500"> Sign up</Link>.
 			    </p>
             </div>
         </div>

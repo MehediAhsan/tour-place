@@ -61,19 +61,19 @@ const Register = () => {
                 <form onSubmit={handleSubmit} className="space-y-4 ng-untouched ng-pristine ng-valid">
                     <div>
                         <label className="block mb-2 text-sm">Full Name</label>
-                        <input type="text" name="name" placeholder="Full Name" className="w-full px-3 py-2 border rounded-md text-gray-200 bg-gray-100" required />
+                        <input type="text" name="name" placeholder="Full Name" className="w-full px-3 py-2 rounded-md  text-gray-200 bg-transparent shadow shadow-gray-200" required />
                     </div>
                     <div>
                         <label className="block mb-2 text-sm">Photo URL</label>
-                        <input type="text" name="photoURL" placeholder="Photo URL" className="w-full px-3 py-2 border rounded-md text-gray-200 bg-gray-100" required />
+                        <input type="text" name="photoURL" placeholder="Photo URL" className="w-full px-3 py-2 rounded-md  text-gray-200 bg-transparent shadow shadow-gray-200" required />
                     </div>
                     <div>
                         <label className="block mb-2 text-sm">Email address</label>
-                        <input type="email" name="email" placeholder="Email" className="w-full px-3 py-2 border rounded-md text-gray-200 bg-gray-100" required />
+                        <input type="email" name="email" placeholder="Email" className="w-full px-3 py-2 rounded-md  text-gray-200 bg-transparent shadow shadow-gray-200" required />
                     </div>
                     <div className="space-y-1 text-sm">
                         <label className="block mb-2 text-sm">Password</label>
-                        <input type="password" name="password" placeholder="Password" className="w-full px-4 py-3 rounded-md border text-gray-800 bg-gray-100 focus:dark:border-violet-400" required />
+                        <input type="password" name="password" placeholder="Password" className="w-full px-3 py-3 rounded-md  text-gray-200 bg-transparent shadow shadow-gray-200" required />
                     </div>
                     <button type='submit' className="block w-full p-3 text-center rounded-sm text-xl shadow shadow-rose-200 font-medium text-rose-500 transition delay-300 hover:bg-rose-500  hover:text-white">Sign up</button>
                     <p className='text-red-500'>
@@ -81,7 +81,7 @@ const Register = () => {
                     </p>
                 </form>      
                 <p className="px-6 text-sm text-center text-gray-200">Already have an account?
-				<Link rel="noopener noreferrer" to="/login" className="hover:underline dark:text-violet-500">Login</Link>.
+				<Link rel="noopener noreferrer" to="/login" className="hover:underline dark:text-violet-500"> Login</Link>.
 			    </p>
             </div>
         </div>
