@@ -40,7 +40,7 @@ const Header = () => {
               to="/"
               aria-label="Home"
               title="Home"
-              className="font-medium text-lg tracking-wide text-gray-200 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium text-lg tracking-wide text-gray-200 hover:text-rose-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
             >
               Home
             </Link>
@@ -50,7 +50,7 @@ const Header = () => {
               to="/about"
               aria-label="About"
               title="About"
-              className="font-medium text-lg tracking-wide text-gray-200 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium text-lg tracking-wide text-gray-200 hover:text-rose-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
             >
               About
             </Link>
@@ -60,7 +60,7 @@ const Header = () => {
               to="/blog"
               aria-label="Blog"
               title="Blog"
-              className="font-medium text-lg tracking-wide text-gray-200 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium text-lg tracking-wide text-gray-200 hover:text-rose-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
             >
               Blog
             </Link>
@@ -70,7 +70,7 @@ const Header = () => {
               to="/contact"
               aria-label="Contact"
               title="Contact"
-              className="font-medium text-lg tracking-wide text-gray-200 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium text-lg tracking-wide text-gray-200 hover:text-rose-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
             >
               Contact
             </Link>
@@ -177,7 +177,7 @@ const Header = () => {
                         to="/"
                         aria-label="Our product"
                         title="Our product"
-                        className="font-medium text-lg tracking-wide text-gray-200 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        className="font-medium text-lg tracking-wide text-gray-200 hover:text-rose-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
                       >
                         Home
                       </Link>
@@ -187,7 +187,7 @@ const Header = () => {
                         to="/about"
                         aria-label="About"
                         title="About"
-                        className="font-medium text-lg tracking-wide text-gray-200 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        className="font-medium text-lg tracking-wide text-gray-200 hover:text-rose-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
                       >
                         About
                       </Link>
@@ -197,7 +197,7 @@ const Header = () => {
                         to="/blog"
                         aria-label="Blog"
                         title="Blog"
-                        className="font-medium text-lg tracking-wide text-gray-200 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        className="font-medium text-lg tracking-wide text-gray-200 hover:text-rose-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
                       >
                         Blog
                       </Link>
@@ -207,7 +207,7 @@ const Header = () => {
                         to="/contact"
                         aria-label="Contact"
                         title="Contact"
-                        className="font-medium text-lg tracking-wide text-gray-200 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        className="font-medium text-lg tracking-wide text-gray-200 hover:text-rose-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
                       >
                         Contact
                       </Link>
