@@ -26,3 +26,5 @@ Tailwind Components -> [Mamba UI](https://www.mambaui.com/components)
 Icon -> [ReactIcons](https://react-icons.github.io/react-icons/)
 
 Tooltip -> [Tooltip](https://www.npmjs.com/package/react-tippy)
+
+Aos -> [Aos](https://https://michalsnik.github.io/aos/)
