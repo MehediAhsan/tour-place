@@ -16,3 +16,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* scroll thumb */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(45deg, #fa3862, rgb(255, 255, 255));
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, rgb(255, 255, 255), #fa3862);
+    border-radius: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(45deg, rgb(255, 255, 255), #fa3862);
+    border-radius: 8px;
+  }
