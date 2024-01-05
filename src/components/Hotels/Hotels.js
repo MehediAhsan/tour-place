@@ -7,6 +7,7 @@ import LocationMap from './LocationMap/LocationMap';
 const Hotels = () => {
     const hotels = useLoaderData();
     useTitle('Hotels');
+    const location = hotels[0];
     return (
         <div className='grid grid-cols-7 container mx-auto gap-10 py-40 px-5'>
             <div data-aos="fade-right" data-aos-duration="1000" className='col-span-7 md:col-span-4'>
@@ -15,7 +16,7 @@ const Hotels = () => {
                 }
             </div>
             <div data-aos="fade-left" data-aos-duration="1000" className='col-span-7 md:col-span-3'>
-                <LocationMap></LocationMap>
+                <LocationMap location={location}></LocationMap>
             </div>
         </div>
     );

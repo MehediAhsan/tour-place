@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 const Hotel = ({hotel}) => {
     const {name, image, description, price,place_name,id} = hotel;
-    console.log(hotel)
     return (
         <div className="flex overflow-hidden rounded mb-8 shadow shadow-rose-400">
             <img className='w-60' src={image} alt="" />
