@@ -1,64 +1,69 @@
-import React, { useState } from 'react';
-import { GoogleMap, LoadScript, DirectionsService, DirectionsRenderer } from '@react-google-maps/api';
+import React from "react";
+import "leaflet/dist/leaflet.css";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import MarkerClusterGroup from "react-leaflet-cluster";
+import mapIcon from "../../../assets/placeholder.png"
 
+import { Icon, divIcon, point } from "leaflet";
 
-const location = {
-    lat: 23.791599,
-    lng: 90.389099
-};
+const LocationMap = () => {
+  // create custom icon
+  const customIcon = new Icon({
+    // iconUrl: "https://cdn-icons-png.flaticon.com/512/447/447031.png",
+    iconUrl: mapIcon,
+    iconSize: [30, 30], // size of the icon
+  });
 
-const Direction = () => {
-    const [response, setResponse] = useState(null);
-    const origin = 'khulna';
-    const destination = 'bagerhat';
-    const directionsCallback = res => {
-        if (res != null) {
-            setResponse(res);
-        }
+  // custom cluster icon
+  const createClusterCustomIcon = function (cluster) {
+    return new divIcon({
+      html: `<span class="cluster-icon">${cluster.getChildCount()}</span>`,
+      className: "custom-marker-cluster",
+      iconSize: point(33, 33, true),
+    });
+  };
+
+  // markers
+  const markers = [
+    {
+      geocode: [23.382065913112346, 92.29395381818482],
+      popUp: "Sajek",
+    },
+    {
+      geocode: [21.428922111571584, 92.00278817681354],
+      popUp: "Cox's Bazar",
+    },
+    {
+      geocode: [21.819744785506565, 90.13853270439054],
+      popUp: "Kuakata",
+    },
+    {
+      geocode: [22.298937615666887, 89.56757934979424],
+      popUp: "Sundarbans",
     }
-    return (
-        <div>
-            <LoadScript
-                googleMapsApiKey='AIzaSyBMoPocUaZhEPGj26getzChyk89YxJjifQ'
-            >
-                <GoogleMap
-                    id='direction-example'
-                    mapContainerStyle={{
-                        height: '100vh',
-                        width: '100%'
-                    }}
-                    // required
-                    zoom={10}
-                    // required
-                    center={location}
-                >
+  ];
+  return (
+    <MapContainer center={[23.777176, 90.399452]} zoom={7}>
+      {/* OPEN STREEN MAPS TILES */}
+      <TileLayer
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
 
-                    <DirectionsService
-                        // required
-                        options={{
-                            origin: origin,
-                            destination: destination,
-                            travelMode: 'DRIVING'
-                        }}
-                        // required
-                        callback={directionsCallback}
-                    />
+      <MarkerClusterGroup
+        chunkedLoading
+        iconCreateFunction={createClusterCustomIcon}
+      >
+        {/* Mapping through the markers */}
+        {markers.map((marker) => (
+          <Marker position={marker.geocode} icon={customIcon}>
+            <Popup>{marker.popUp}</Popup>
+          </Marker>
+        ))}
 
-
-                    {
-                        response !== null && (
-                            <DirectionsRenderer
-                                // required
-                                options={{
-                                    directions: response
-                                }}
-                            />
-                        )
-                    }
-                </GoogleMap>
-            </LoadScript>
-        </div>
-    );
+      </MarkerClusterGroup>
+    </MapContainer>
+  );
 };
 
-export default Direction;
+export default LocationMap;
