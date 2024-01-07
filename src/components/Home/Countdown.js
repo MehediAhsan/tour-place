@@ -10,7 +10,7 @@ const Countdown = () => {
   });
 
   useEffect(() => {
-    const targetDate = new Date('2023-12-31 00:00:00'); // Replace with your tour date
+    const targetDate = new Date('2024-01-31 00:00:00'); // Replace with your tour date
     const interval = setInterval(() => {
       const currentDate = new Date();
       const timeDifference = targetDate - currentDate;

@@ -1,27 +1,27 @@
-import React, { useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
-import logo from '../../assets/logo.png';
-import { AuthContext } from '../../contexts/AuthProvider';
-import toast from 'react-hot-toast';
-import { Tooltip } from 'react-tippy';
-import 'react-tippy/dist/tippy.css';
+import React, { useContext, useState } from "react";
+import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png";
+import { AuthContext } from "../../contexts/AuthProvider";
+import toast from "react-hot-toast";
+import { Tooltip } from "react-tippy";
+import "react-tippy/dist/tippy.css";
 
 const Header = () => {
-    const {user, logOut} = useContext(AuthContext);
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { user, logOut } = useContext(AuthContext);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const handleLogOut = () => {
-      logOut()
-      .then( () => {
-        toast.success('Logout Successfully');
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {
+        toast.success("Logout Successfully");
       })
-      .catch( error => {
-          console.error(error);
-      })
-    }
+      .catch((error) => {
+        console.error(error);
+      });
+  };
 
-    return (
-        <div className="container bg-transparent absolute px-4 py-5 mx-auto sm:max-w-xl md:max-w-full md:px-20 lg:px-14">
+  return (
+    <div className="container bg-transparent absolute px-4 py-5 mx-auto sm:max-w-xl md:max-w-full md:px-20 lg:px-14">
       <div className="relative flex items-center justify-between">
         <Link
           to="/"
@@ -29,7 +29,7 @@ const Header = () => {
           title="Tour Place"
           className="inline-flex items-center"
         >
-          <img className='w-10 h-10' src={logo} alt="" />
+          <img className="w-10 h-10" src={logo} alt="" />
           <span className="ml-2 text-2xl font-bold tracking-wide text-rose-500 font-Berkshire">
             Tour Place
           </span>
@@ -76,11 +76,11 @@ const Header = () => {
             </Link>
           </li>
           <>
-            {
-              user ?
+            {user ? (
               <>
                 <li>
-                  <button onClick={handleLogOut}
+                  <button
+                    onClick={handleLogOut}
                     className="inline-flex items-center justify-center h-10 px-3 font-medium text-lg tracking-wide text-rose-400 hover:text-white transition duration-200 rounded shadow hover:bg-rose-500 shadow-rose-200"
                     aria-label="Login"
                     title="Login"
@@ -95,11 +95,20 @@ const Header = () => {
                     trigger="mouseenter"
                   >
                     <Link>
-                      <img src={user?.photoURL ? user?.photoURL : 'https://cdn-icons-png.flaticon.com/512/149/149071.png'} alt="" className="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500" />
+                      <img
+                        src={
+                          user?.photoURL
+                            ? user?.photoURL
+                            : "https://cdn-icons-png.flaticon.com/512/149/149071.png"
+                        }
+                        alt=""
+                        className="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500"
+                      />
                     </Link>
                   </Tooltip>
                 </li>
-              </> :
+              </>
+            ) : (
               <>
                 <li>
                   <Link
@@ -112,7 +121,7 @@ const Header = () => {
                   </Link>
                 </li>
               </>
-            }
+            )}
           </>
         </ul>
         <div className="lg:hidden">
@@ -142,23 +151,23 @@ const Header = () => {
               <div className="p-5 bg-black border rounded shadow-sm">
                 <div className="flex items-center justify-between mb-4">
                   <div>
-                  <Link
-          to="/"
-          aria-label="Tour Place"
-          title="Tour Place"
-          className="inline-flex items-center"
-        >
-          <img className='w-8 h-8' src={logo} alt="" />
-          <span className="ml-2 text-xl font-bold tracking-wide text-rose-500 font-Berkshire">
-            Tour Place
-          </span>
-        </Link>
+                    <Link
+                      to="/"
+                      aria-label="Tour Place"
+                      title="Tour Place"
+                      className="inline-flex items-center"
+                    >
+                      <img className="w-8 h-8" src={logo} alt="" />
+                      <span className="ml-2 text-xl font-bold tracking-wide text-rose-500 font-Berkshire">
+                        Tour Place
+                      </span>
+                    </Link>
                   </div>
                   <div>
                     <button
                       aria-label="Close Menu"
                       title="Close Menu"
-                      className="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline "
+                      className="p-2 -mt-2 -mr-2 transition duration-200 rounded bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline "
                       onClick={() => setIsMenuOpen(false)}
                     >
                       <svg className="w-5 text-gray-900" viewBox="0 0 24 24">
@@ -213,44 +222,53 @@ const Header = () => {
                       </Link>
                     </li>
                     <>
-            {
-              user ?
-              <>
-                <li>
-                  <button onClick={handleLogOut}
-                    className="inline-flex items-center justify-center h-10 px-3 font-medium text-lg tracking-wide text-rose-400 hover:text-white transition duration-200 rounded shadow hover:bg-rose-500 shadow-rose-200"
-                    aria-label="Login"
-                    title="Login"
-                  >
-                    Logout
-                  </button>
-                </li>
-                <li>
-                  <Tooltip
-                    title={user?.displayName}
-                    position="bottom"
-                    trigger="mouseenter"
-                  >
-                    <Link>
-                      <img src={user?.photoURL ? user?.photoURL : 'https://cdn-icons-png.flaticon.com/512/149/149071.png'} alt="" className="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500" />
-                    </Link>
-                  </Tooltip>
-                </li>
-              </> :
-              <>
-                <li>
-                  <Link
-                    to="/login"
-                    className="inline-flex items-center justify-center h-10 px-3 font-medium text-lg tracking-wide text-rose-400 hover:text-white transition duration-200 rounded shadow hover:bg-rose-500 shadow-rose-200"
-                    aria-label="Login"
-                    title="Login"
-                  >
-                    Login
-                  </Link>
-                </li>
-              </>
-            }
-          </>
+                      {user ? (
+                        <>
+                          <li>
+                            <button
+                              onClick={handleLogOut}
+                              className="inline-flex items-center justify-center h-10 px-3 font-medium text-lg tracking-wide text-rose-400 hover:text-white transition duration-200 rounded shadow hover:bg-rose-500 shadow-rose-200"
+                              aria-label="Login"
+                              title="Login"
+                            >
+                              Logout
+                            </button>
+                          </li>
+                          <li>
+                            <Tooltip
+                              title={user?.displayName}
+                              position="bottom"
+                              trigger="mouseenter"
+                            >
+                              <Link>
+                                <img
+                                  src={
+                                    user?.photoURL
+                                      ? user?.photoURL
+                                      : "https://cdn-icons-png.flaticon.com/512/149/149071.png"
+                                  }
+                                  alt=""
+                                  className="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500"
+                                />
+                              </Link>
+                            </Tooltip>
+                          </li>
+                        </>
+                      ) : (
+                        <>
+                          <li>
+                            <Link
+                              to="/login"
+                              className="inline-flex items-center justify-center h-10 px-3 font-medium text-lg tracking-wide text-rose-400 hover:text-white transition duration-200 rounded shadow hover:bg-rose-500 shadow-rose-200"
+                              aria-label="Login"
+                              title="Login"
+                            >
+                              Login
+                            </Link>
+                          </li>
+                        </>
+                      )}
+                    </>
                   </ul>
                 </nav>
               </div>
@@ -259,7 +277,7 @@ const Header = () => {
         </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default Header;
